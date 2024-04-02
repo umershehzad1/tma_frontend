@@ -1,8 +1,11 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 
 const page = () => {
   return (
-    <div>page</div>
+    <>
+
+    </>
   )
 }
 
