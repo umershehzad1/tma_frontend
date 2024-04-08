@@ -7,22 +7,22 @@ import secure from "../assets/secure.svg";
 import moneyback from "../assets/money-back.svg";
 const perksData = [
   {
-    image:shippingImage,
+    image: shippingImage,
     title: "Free Shipping",
     description: "Free shipping on all your orders",
   },
   {
-    image:support,
+    image: support,
     title: "Customer Support 24/7",
     description: "Instant access to Support",
   },
   {
-    image:secure,
+    image: secure,
     title: "100% Secure Payment",
     description: "We ensure your money is save",
   },
   {
-    image:moneyback,
+    image: moneyback,
     title: "Money-Back Guarantee",
     description: "Free Seattle delivery and returns",
   },
