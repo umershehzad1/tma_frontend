@@ -22,7 +22,7 @@ const CategoryCard = () => {
               <Card.Body>
                 <Row>
                   <Col xs={9}>
-                    <Card.Text className="m-0">Red Chili</Card.Text>
+                    <Card.Text className="m-0"  style={{ cursor: "pointer" }}>Red Chili</Card.Text>
                     <Card.Title className="fs-6">N14.99</Card.Title>
                   </Col>
                   <Col xs={3}>
@@ -31,7 +31,11 @@ const CategoryCard = () => {
                       width={0}
                       height={0}
                       sizes="100vw"
-                      style={{ width: "100%", height: "auto" }}
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        cursor: "pointer",
+                      }}
                       alt="team"
                     />
                   </Col>

@@ -1,14 +1,14 @@
 :root {
   --primary-color: rgb(11, 47, 75);
   --secondary-color: rgba(128, 128, 128, 1);
-  --white-color:rgba(255, 255, 255, 1);
+  --white-color: rgba(255, 255, 255, 1);
 }
 .hero {
   background-color: var(--primary-color);
 }
 html {
-    font-family: var(--font-inter);
-  }
+  font-family: var(--font-inter);
+}
 
 .hero h1 {
   font-size: 48px;
@@ -32,5 +32,21 @@ html {
   line-height: 36px;
   text-align: left;
   color: var(--white-color);
+}
+.hero button {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 20px 40px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .hero button {
+    width: 100%;
+  }
 
 }
