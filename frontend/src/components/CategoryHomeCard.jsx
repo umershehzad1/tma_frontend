@@ -14,8 +14,6 @@ const CategoryHomeCard = () => {
     { name: "Grains & Flower", image: meat },
     { name: "Breakfast Food", image: meat },
     { name: "Seasoning & Oil", image: meat },
-   
-
   ];
   return (
     <>
@@ -59,10 +57,16 @@ const CategoryHomeCard = () => {
           ))}
         </Row>
         <div className="text-end py-3 ">
-          <Link href="" className="text-decoration-none" style={{ color: "rgba(0, 107, 163, 1)",fontSize:"16px",fontWeight:"500" }}>
-            <span className="mt-3" >
-              view More
-            </span>
+          <Link
+            href=""
+            className="text-decoration-none"
+            style={{
+              color: "rgba(0, 107, 163, 1)",
+              fontSize: "16px",
+              fontWeight: "500",
+            }}
+          >
+            <span className="mt-3">view More</span>
             <span className="ms-2">
               <Image src={downarrow} width={13} height={13} alt="shipping" />
             </span>

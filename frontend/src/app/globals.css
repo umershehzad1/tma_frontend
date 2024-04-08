@@ -42,11 +42,19 @@ html {
   line-height: 20px;
   padding: 20px 40px;
 }
-
+.newly-btn {
+  background-color: var(--white-color) !important;
+  color: var(--primary-color) !important;
+  border: none !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 16px !important;
+  padding: 14px 32px !important;
+  border-radius: 5px !important;
+}
 
 @media only screen and (max-width: 768px) {
   .hero button {
     width: 100%;
   }
-
 }

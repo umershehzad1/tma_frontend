@@ -6,7 +6,7 @@ import Image from "next/image";
 const ViewAllHeading = ({ title, viewAllLink}) => {
   return (
     <>
-      <Container>
+
         <Row className="my-4">
           <Col xs={6}>
             <h3>{title}</h3>
@@ -24,7 +24,7 @@ const ViewAllHeading = ({ title, viewAllLink}) => {
             </div>
           </Col>
         </Row>
-      </Container>
+    
     </>
   );
 };
