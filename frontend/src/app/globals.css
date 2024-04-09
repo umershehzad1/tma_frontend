@@ -42,6 +42,14 @@ html {
   line-height: 20px;
   padding: 20px 40px;
 }
+.odd-card {
+  border-right: 0 !important;
+  border-left: 0 !important;
+}
+.top-selling-items {
+  width: 20%;
+}
+
 .newly-btn {
   background-color: var(--white-color) !important;
   color: var(--primary-color) !important;
@@ -53,8 +61,36 @@ html {
   border-radius: 5px !important;
 }
 
+.types h1 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48.4px;
+}
+.types p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.types button {
+  background-color: var(--primary-color) !important;
+  color: var(--white-color) !important;
+  border: none !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 16px !important;
+  padding: 14px 32px !important;
+  border-radius: 5px !important;
+}
+
 @media only screen and (max-width: 768px) {
   .hero button {
     width: 100%;
+  }
+  .top-selling-items {
+    width: 100%;
+  }
+  .odd-card {
+    border-right: 1px solid #d2d2d2 !important;
+    border-left: 1px solid #d2d2d2 !important;
   }
 }

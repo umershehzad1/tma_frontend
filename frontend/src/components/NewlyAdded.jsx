@@ -36,7 +36,9 @@ const NewlyAdded = () => {
               }}
             >
               <div className="text-center">
-                <h1 className="text-white" style={{fontSize:"32px"}}>Fruit</h1>
+                <h1 className="text-white" style={{ fontSize: "32px" }}>
+                  Fruit
+                </h1>
                 <Button className="newly-btn">
                   Shop Now
                   <span className="ms-2">
@@ -67,7 +69,9 @@ const NewlyAdded = () => {
                     }}
                   >
                     <div className="text-center">
-                      <h1 className="text-white" style={{fontSize:"32px"}}>{category}</h1>
+                      <h1 className="text-white" style={{ fontSize: "32px" }}>
+                        {category}
+                      </h1>
                       <Button className="newly-btn">
                         Shop Now
                         <span className="ms-2">

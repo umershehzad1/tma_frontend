@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-
+import hero from "../assets/heropng.png"
+import Image from "next/image";
 const Hero = () => {
   return (
     <>
@@ -25,7 +26,16 @@ const Hero = () => {
               </div>
             </Col>
             <Col xs={12} lg={4}>
-              Bye
+              {/* <div>
+              <Image
+                    src={hero}
+                    width={0}
+                    height={0}
+                    alt="shipping"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+              </div> */}
+           
             </Col>
           </Row>
         </Container>
