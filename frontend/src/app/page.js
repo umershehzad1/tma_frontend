@@ -9,6 +9,8 @@ import TopSelling from "@/components/TopSelling";
 import Types from "@/components/Types";
 import CategoryCard from "@/components/CategoryCard";
 import LearnMore from "@/components/LearnMore";
+import Icons from "@/components/Icons";
+import Instagram from "@/components/Instagram";
 
 const page = () => {
   return (
@@ -21,7 +23,10 @@ const page = () => {
       <TopSelling />
       <RecentSearch />
       <Types/>
+      <Icons/>
+      <Instagram/>
       <LimitedStock />
+
       {/* <CategoryCard/> */}
     </>
   );
