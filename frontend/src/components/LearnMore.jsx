@@ -81,7 +81,7 @@ const LearnMore = () => {
                     <Card.Title>{product.title}</Card.Title>
                     <Card.Text className="m-0 pe-4">{product.description}</Card.Text>
                     <Link className="text-decoration-none" href={product.link}>
-                      Watch No{" "}
+                      Watch Now{" "}
                       <Image
                         src={youtube}
                         width={23}

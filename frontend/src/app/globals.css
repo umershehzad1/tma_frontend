@@ -117,7 +117,6 @@ html {
   opacity: 0;
   transition: .5s ease;
   background: rgba(0, 107, 163, 0.8);
-
   display: flex;
   justify-content: center;
   align-items: center !important;
@@ -127,7 +126,15 @@ html {
 .instaouter:hover .overlay {
   opacity: 1;
 }
+.featured-btn{
 
+padding: 14px 32px 14px 32px !important;
+
+border-radius: 5px !important;
+
+background: rgba(0, 107, 163, 1) !important;
+border: none !important;
+}
 
 @media only screen and (max-width: 768px) {
   .hero button {

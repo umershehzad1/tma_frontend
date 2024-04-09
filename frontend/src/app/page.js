@@ -11,6 +11,7 @@ import CategoryCard from "@/components/CategoryCard";
 import LearnMore from "@/components/LearnMore";
 import Icons from "@/components/Icons";
 import Instagram from "@/components/Instagram";
+import Featured from "@/components/Featured";
 
 const page = () => {
   return (
@@ -18,6 +19,7 @@ const page = () => {
       <Hero />
       <Perks />
       <CategoryHomeCard />
+      <Featured/>
       <NewlyAdded />
       <LearnMore/>
       <TopSelling />
