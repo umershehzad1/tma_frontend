@@ -8,6 +8,7 @@ import RecentSearch from "@/components/RecentSearch";
 import TopSelling from "@/components/TopSelling";
 import Types from "@/components/Types";
 import CategoryCard from "@/components/CategoryCard";
+import LearnMore from "@/components/LearnMore";
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
       <Perks />
       <CategoryHomeCard />
       <NewlyAdded />
+      <LearnMore/>
       <TopSelling />
       <RecentSearch />
       <Types/>
