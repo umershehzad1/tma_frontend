@@ -14,8 +14,8 @@ import cart from "@/assets/Bag.svg";
 function Header() {
   const [active, setActive] = useState(false);
   const navItems = [
-    { title: "Meat", href: "#" },
-    { title: "Vegetables", href: "#" },
+    { title: "Meat", href: "/" },
+    { title: "Vegetables", href: "/product" },
     { title: "Fish & Seafoods ", href: "#" },
     { title: "Grains & Flowers", href: "#" },
     { title: "Breakfast", href: "#" },

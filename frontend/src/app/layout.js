@@ -1,16 +1,17 @@
-import { Inter,Roboto_Mono } from "next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "@/components/shared/Header";
+import TmaFooter from "@/components/shared/TmaFooter";
 export const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-})
- 
-export const roboto_mono = Roboto_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-})
+  subsets: ["latin"],
+  display: "swap",
+});
 
+export const roboto_mono = Roboto_Mono({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "TMA",
@@ -20,7 +21,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        {children}
+        <TmaFooter />
+      </body>
     </html>
   );
 }
