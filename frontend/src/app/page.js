@@ -13,10 +13,12 @@ import Icons from "@/components/Icons";
 import Instagram from "@/components/Instagram";
 import Featured from "@/components/Featured";
 import TmaFooter from "@/components/TmaFooter";
+import Header from "@/components/Header";
 
 const page = () => {
   return (
     <>
+    <Header/>
       <Hero />
       <Perks />
       <CategoryHomeCard />
