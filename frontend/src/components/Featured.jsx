@@ -20,7 +20,7 @@ const Featured = () => {
 
   return (
     <>
-      <Container>
+      {/* <Container>
         <ViewAllHeading title="Featured Products" viewAllLink="/" />
         <Row>
           <Col xs={4}>
@@ -155,7 +155,7 @@ const Featured = () => {
           </Col>
         </Row>
         <div className="d-lg-flex"></div>
-      </Container>
+      </Container> */}
     </>
   );
 };

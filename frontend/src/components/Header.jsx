@@ -10,7 +10,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "@/assets/logo.png";
 import Link from "next/link";
 import Heart from "@react-sandbox/heart";
-import cart from "@/assets/Bag.svg"
+import cart from "@/assets/Bag.svg";
 function Header() {
   const [active, setActive] = useState(false);
   const navItems = [
@@ -23,9 +23,11 @@ function Header() {
     {
       title: "Others",
       items: [
-        { title: "Action", href: "#" },
-        { title: "Another action", href: "#" },
-        { title: "Something else here", href: "#" },
+        { title: "Drinks", href: "#" },
+        { title: "Snacks & Sweets", href: "#" },
+        { title: "Canned Foods", href: "#" },
+        { title: "Pasta & Noodles", href: "#" },
+        { title: "Cosmetics", href: "#" },
       ],
     },
   ];
@@ -78,6 +80,8 @@ function Header() {
                         <NavDropdown.Item
                           href={subItem.href}
                           key={`${index}-${subIndex}`}
+                          style={subIndex===4?{}: {borderBottom : "1px solid #7F7F7F"} }
+                          className="py-3"
                         >
                           {subItem.title}
                         </NavDropdown.Item>
@@ -130,11 +134,16 @@ function Header() {
                 />
               </div>
               <div className="mt-2">
-                <button type="button" class="bg-transparent border-0 position-relative">
-                <Image src={cart}/>
-                  <span class="position-absolute top-30 start-5 translate-middle badge rounded-pill" style={{background:"rgb(11, 47, 75)"}}>
+                <button
+                  type="button"
+                  class="bg-transparent border-0 position-relative"
+                >
+                  <Image src={cart} />
+                  <span
+                    class="position-absolute top-30 start-5 translate-middle badge rounded-pill"
+                    style={{ background: "rgb(11, 47, 75)" }}
+                  >
                     2
-                    
                   </span>
                 </button>
               </div>
