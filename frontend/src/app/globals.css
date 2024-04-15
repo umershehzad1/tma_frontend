@@ -101,10 +101,9 @@ html {
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.04);
 }
 
-.icons svg:hover g path{
+.icons svg:hover g path {
   fill: rgba(0, 107, 163, 1);
 }
-
 
 .overlay {
   position: absolute;
@@ -115,7 +114,7 @@ html {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background: rgba(0, 107, 163, 0.8);
   display: flex;
   justify-content: center;
@@ -126,16 +125,37 @@ html {
 .instaouter:hover .overlay {
   opacity: 1;
 }
-.featured-btn{
+.featured-btn {
+  padding: 14px 32px 14px 32px !important;
 
-padding: 14px 32px 14px 32px !important;
+  border-radius: 5px !important;
 
-border-radius: 5px !important;
-
-background: rgba(0, 107, 163, 1) !important;
-border: none !important;
+  background: rgba(0, 107, 163, 1) !important;
+  border: none !important;
 }
 
+.footer-links-color {
+  color: #999999;
+}
+footer h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+footer ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+footer ul li a:hover {
+  color: white;
+}
 @media only screen and (max-width: 768px) {
   .hero button {
     width: 100%;
@@ -147,7 +167,7 @@ border: none !important;
     border-right: 1px solid #d2d2d2 !important;
     border-left: 1px solid #d2d2d2 !important;
   }
-  .icons{
+  .icons {
     border: none !important;
   }
 }

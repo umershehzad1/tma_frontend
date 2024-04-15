@@ -78,7 +78,7 @@ const Featured = () => {
                     />
                   </div>
 
-                  <Row >
+                  <Row>
                     <Col xs={2}>
                       <Image
                         src={cart}

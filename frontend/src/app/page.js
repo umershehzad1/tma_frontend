@@ -12,6 +12,7 @@ import LearnMore from "@/components/LearnMore";
 import Icons from "@/components/Icons";
 import Instagram from "@/components/Instagram";
 import Featured from "@/components/Featured";
+import TmaFooter from "@/components/TmaFooter";
 
 const page = () => {
   return (
@@ -26,8 +27,9 @@ const page = () => {
       <RecentSearch />
       <Types/>
       <Icons/>
-      <Instagram/>
       <LimitedStock />
+      <Instagram/>
+      <TmaFooter/>
 
       {/* <CategoryCard/> */}
     </>
