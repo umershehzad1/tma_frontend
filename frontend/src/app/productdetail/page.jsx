@@ -7,10 +7,10 @@ const page = () => {
     <>
       <Container>
         <Row>
-          <Col xs={12} lg={6}>
+          <Col xs={12} lg={6} className="order-sm-0 order-1">
             <ProductImage />
           </Col>
-          <Col xs={12} lg={6}>
+          <Col xs={12} lg={6} className="order-sm-1 order-0">
             <ProductDetail />
           </Col>
         </Row>

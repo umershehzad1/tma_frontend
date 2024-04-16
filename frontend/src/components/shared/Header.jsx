@@ -16,7 +16,7 @@ function Header() {
   const navItems = [
     { title: "Meat", href: "/" },
     { title: "Vegetables", href: "/product" },
-    { title: "Fish & Seafoods ", href: "#" },
+    { title: "Fish & Seafoods ", href: "/productdetail" },
     { title: "Grains & Flowers", href: "#" },
     { title: "Breakfast", href: "#" },
     { title: "Seasoning & Oil", href: "#" },
