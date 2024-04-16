@@ -5,7 +5,6 @@ import { Button, Col, Row } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import productImage from "@/assets/image.png";
 import closebtn from "@/assets/cancelproduct.svg";
-import { Noto_Serif_Khitan_Small_Script } from "next/font/google";
 const CartOverlay = ({ isOpen, onClose }) => {
   const [count, setCount] = React.useState(0);
   const handleClose = () => {
