@@ -11,13 +11,23 @@ import logo from "@/assets/logo.png";
 import Link from "next/link";
 import Heart from "@react-sandbox/heart";
 import cart from "@/assets/Bag.svg";
+import CartOverlay from "../CartOverlay";
 function Header() {
   const [active, setActive] = useState(false);
+  const [showCart, setShowCart] = useState(false);
+
+  const handleCartButtonClick = () => {
+    setShowCart(true);
+  };
+
+  const handleCloseCart = () => {
+    setShowCart(false);
+  };
   const navItems = [
     { title: "Meat", href: "/" },
     { title: "Vegetables", href: "/product" },
     { title: "Fish & Seafoods ", href: "/productdetail" },
-    { title: "Grains & Flowers", href: "#" },
+    { title: "Grains & Flowers", href: "/billinginfo" },
     { title: "Breakfast", href: "#" },
     { title: "Seasoning & Oil", href: "#" },
     {
@@ -58,7 +68,7 @@ function Header() {
       <hr className="mt-2 mb-2" style={{ color: "#999999" }} />
       <Navbar expand="lg" className="bg-transparent header">
         <Container className="pb-2">
-          <Navbar.Brand href="#">
+          <Navbar.Brand as={Link} href="/">
             <Image src={logo} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -80,7 +90,11 @@ function Header() {
                         <NavDropdown.Item
                           href={subItem.href}
                           key={`${index}-${subIndex}`}
-                          style={subIndex===4?{}: {borderBottom : "1px solid #7F7F7F"} }
+                          style={
+                            subIndex === 4
+                              ? {}
+                              : { borderBottom: "1px solid #7F7F7F" }
+                          }
                           className="py-3"
                         >
                           {subItem.title}
@@ -134,9 +148,10 @@ function Header() {
                 />
               </div>
               <div className="mt-2">
-                <button
+                <Button
                   type="button"
                   class="bg-transparent border-0 position-relative"
+                  onClick={handleCartButtonClick}
                 >
                   <Image src={cart} />
                   <span
@@ -145,12 +160,14 @@ function Header() {
                   >
                     2
                   </span>
-                </button>
+                </Button>
               </div>
             </Form>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      <CartOverlay isOpen={showCart} onClose={handleCloseCart} />
     </>
   );
 }

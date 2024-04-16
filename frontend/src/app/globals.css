@@ -493,3 +493,40 @@ footer ul li a:hover {
   align-items: center;
   border-radius: 60px;
 }
+
+
+.bill-form .form-label{
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 21px !important;
+  text-align: left;
+  color: #1A1A1A !important;
+  
+  }
+  .bill-form .form-control::placeholder{
+    font-size: 16px !important;
+      font-weight: 400 !important;
+      color: #999999 !important;
+      border-color: #E6E6E6 !important;
+  }
+  
+  .bill-form .form-select-lg {
+    font-size: 16px !important;
+      font-weight: 400 !important;
+      color: #999999 !important;
+      border-color: #E6E6E6 !important;
+  }
+  .bill-form .form-control:focus {
+    color: none !important;
+    background-color: none !important ;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+  }
+  .bill-form .form-select:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none !important;
+  }
+  
+  
