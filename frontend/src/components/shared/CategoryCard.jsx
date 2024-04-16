@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
-import cart from "../assets/cart.svg";
+import cart from "@/assets/cart.svg";
 const CategoryCard = ({ sale, title, productImage, price,Oldprice }) => {
   return (
     <>

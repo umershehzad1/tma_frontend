@@ -1,10 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-import shippingImage from "../assets/shipping.svg";
-import support from "../assets/support.svg";
-import secure from "../assets/secure.svg";
-import moneyback from "../assets/money-back.svg";
+import shippingImage from "@/assets/shipping.svg";
+import support from "@/assets/support.svg";
+import secure from "@/assets/secure.svg";
+import moneyback from "@/assets/money-back.svg";
 const perksData = [
   {
     image: shippingImage,

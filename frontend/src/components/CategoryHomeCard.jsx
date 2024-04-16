@@ -3,9 +3,9 @@ import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import ViewAllHeading from "./ViewAllHeading";
 import Image from "next/image";
-import meat from "../assets/meat.png";
+import meat from "@/assets/meat.png";
 import Link from "next/link";
-import downarrow from "../assets/arrowdown.svg";
+import downarrow from "@/assets/arrowdown.svg";
 const CategoryHomeCard = () => {
   const categories = [
     { name: "Meat", image: meat },

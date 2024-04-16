@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import showmore from "../assets/showmore.svg";
+import showmore from "@/assets/showmore.svg";
 import Image from "next/image";
 const ViewAllHeading = ({ title, viewAllLink}) => {
   return (

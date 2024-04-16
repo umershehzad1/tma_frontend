@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import showmore from "../assets/white-arrow.svg";
+import showmore from "@/assets/white-arrow.svg";
 import Image from "next/image";
-import firsttype from "../assets/typefirst.png";
-import vegetable from "../assets/vegetableside.png";
+import firsttype from "@/assets/typefirst.png";
+import vegetable from "@/assets/vegetableside.png";
 const Types = () => {
   return (
     <>

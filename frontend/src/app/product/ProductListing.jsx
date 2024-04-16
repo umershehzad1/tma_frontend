@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import CategoryCard from "@/components/CategoryCard";
+import CategoryCard from "@/components/shared/CategoryCard";
 import productimg from "@/assets/image.png";
 import { Col, Row } from "react-bootstrap";
 

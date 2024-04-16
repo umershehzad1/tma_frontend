@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import hero from "../assets/heropng.png"
+import hero from "@/assets/heropng.png"
 import Image from "next/image";
 const Hero = () => {
   return (

@@ -1,12 +1,12 @@
 import React from "react";
 import ViewAllHeading from "./ViewAllHeading";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import Fruits from "../assets/fruit.png";
-import vegetable from "../assets/vegetable.png";
-import Meat from "../assets/meatlarge.png";
-import Cosmetics from "../assets/cosmatics.png";
-import Sale from "../assets/sale.png";
-import showmore from "../assets/showmore.svg";
+import Fruits from "@/assets/fruit.png";
+import vegetable from "@/assets/vegetable.png";
+import Meat from "@/assets/meatlarge.png";
+import Cosmetics from "@/assets/cosmatics.png";
+import Sale from "@/assets/sale.png";
+import showmore from "@/assets/showmore.svg";
 import Image from "next/image";
 const imageMap = {
   Vegetables: vegetable,

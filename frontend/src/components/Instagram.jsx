@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import picture from "../assets/typefirst.png";
+import picture from "@/assets/typefirst.png";
 import Link from "next/link";
-import instagram from "../assets/instagram-light.svg";
-import instadark from "../assets/instagram-dark.svg";
+import instagram from "@/assets/instagram-light.svg";
+import instadark from "@/assets/instagram-dark.svg";
 const Instagram = () => {
     const follow=[
         {
