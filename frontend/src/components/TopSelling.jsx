@@ -45,7 +45,6 @@ const TopSelling = () => {
 
   
   ];
-
   return (
     <>
        <Container>
@@ -62,6 +61,7 @@ const TopSelling = () => {
               productImage={product.productImage}
               price={product.price}
               Oldprice={product.Oldprice}
+              Even={index%2===0?1:2}
             />
             </div>
           ))}

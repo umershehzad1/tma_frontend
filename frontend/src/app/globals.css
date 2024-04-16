@@ -385,10 +385,17 @@ footer ul li a:hover {
 }
 
 .add-to-cart-button {
-
   border-radius: 5px;
   padding: 12px 40px;
   background-color: #00283d !important;
+}
+.go-to-cart {
+  border-radius: 5px;
+  padding: 12px 40px;
+  color: #00283d !important;
+  background-color: #e6eaed !important;
+  font-weight: 600 !important;
+  line-height: 19.2px;
 }
 .radio-input {
   margin-right: 0.5rem;
@@ -422,12 +429,12 @@ footer ul li a:hover {
   align-items: center;
   border-radius: 60px;
 }
-.footer-social:hover{
+.footer-social:hover {
   background-color: var(--primary-color);
   transition: ease-out 0.2s;
 }
 
-.footer-social:hover svg path{
+.footer-social:hover svg path {
   fill: var(--white-color) !important;
 }
 
@@ -439,49 +446,45 @@ footer ul li a:hover {
   margin-left: -20px;
 }
 
-.btn-inc{
+.btn-inc {
   background: transparent;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 5px;
   margin-left: 0.5rem;
   padding: 4px 12px;
-
 }
-.btn-dec{
+.btn-dec {
   background: transparent;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 5px;
   margin-right: 0.5rem;
   padding: 4px 12px;
-
 }
-.inc-dec{
-  border: solid 1px #E6E6E6;
+.inc-dec {
+  border: solid 1px #e6e6e6;
   border-radius: 5px;
 }
 
 .form-check-input:checked {
-  background-color:#00283D !important;
+  background-color: #00283d !important;
   border-color: none !important;
 }
 .form-check-input:focus {
-  border-color:none !important;
+  border-color: none !important;
   outline: 0;
   box-shadow: none !important;
 }
-.form-check-label{
+.form-check-label {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 21px !important;
 
-font-size: 14px !important;
-font-weight: 400 !important;
-line-height: 21px !important;
-
-color: #808080 !important;
-
+  color: #808080 !important;
 }
 
-.heart-outer{
+.heart-outer {
   width: 50px;
   height: 50px;
   background-color: #e6eaed;

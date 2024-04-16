@@ -3,17 +3,17 @@ import Image from "next/image";
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import cart from "@/assets/cart.svg";
-const CategoryCard = ({ sale, title, productImage, price,Oldprice }) => {
+const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
   return (
     <>
       <Card
-      // className={` ${
-      //   index % 2 === 0
-      //     ? "even-card my-2 position-relative rounded-0"
-      //     : "odd-card my-2 position-relative rounded-0"
-      // }`}
-
-      className="my-2"
+        className={` ${
+          Even === 1
+            ? "even-card my-2 position-relative rounded-0"
+            : Even === 2
+            ? "odd-card my-2 position-relative rounded-0"
+            : "my-2 position-relative rounded-0"
+        }`}
       >
         {sale ? (
           <div

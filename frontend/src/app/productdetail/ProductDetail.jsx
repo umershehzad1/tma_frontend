@@ -7,11 +7,20 @@ import Heart from "@react-sandbox/heart";
 import { Badge, Col, Row } from "react-bootstrap";
 import group from "@/assets/Group.png";
 import cart from "@/assets/whitecart.svg";
+import CartOverlay from "@/components/CartOverlay";
 
 const ProductDetail = () => {
   const [active, setActive] = useState(false);
   const [count, setCount] = useState(0);
+  const [showCart, setShowCart] = useState(false);
 
+  const handleCartButtonClick = () => {
+    setShowCart(true);
+  };
+
+  const handleCloseCart = () => {
+    setShowCart(false);
+  };
   const incNum = () => {
     setCount(count + 1);
   };
@@ -143,7 +152,7 @@ const ProductDetail = () => {
             </div>
           </Col>
           <Col lg={7} className="mt-2">
-            <Button className="add-to-cart-button w-100 border-0">
+            <Button className="add-to-cart-button w-100 border-0" onClick={handleCartButtonClick}>
               Add to Cart
               <Image
                 src={cart}
@@ -201,6 +210,7 @@ const ProductDetail = () => {
           </Col>
         </Row>
       </div>
+      <CartOverlay isOpen={showCart} onClose={handleCloseCart} />
     </>
   );
 };

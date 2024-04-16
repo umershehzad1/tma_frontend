@@ -18,6 +18,7 @@ const imageMap = {
 const NewlyAdded = () => {
   return (
     <>
+
       <Container>
         <ViewAllHeading
           title="Newly Added Products"
