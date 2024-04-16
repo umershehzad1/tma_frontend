@@ -219,8 +219,6 @@ footer ul li a:hover {
   text-align: left;
 }
 
-
-
 .product-detail h4 {
   font-size: 36px;
   font-weight: 600;
@@ -232,12 +230,13 @@ footer ul li a:hover {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+
   text-align: left;
   color: #00283d;
   background: #dce2e6 !important;
 }
 .product-detail .sale {
-  font-size: 14px;
+  font-size: 14px !important;
   font-weight: 500;
   line-height: 21px;
   text-align: left;
@@ -315,12 +314,11 @@ footer ul li a:hover {
   cursor: pointer;
 }
 
-.accordion-header button{
+.accordion-header button {
   padding-left: 0 !important;
 }
 
-
-hero h1 {
+.hero h1 {
   font-size: 48px;
   font-weight: 900;
   line-height: 48.96px;
@@ -342,50 +340,46 @@ hero h1 {
   line-height: 36px;
   text-align: left;
   color: var(--white-color);
-
 }
-.filter-result{
+.filter-result {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5rem;
-
 }
 
-.filter-btn{
-  background-color: #00283D !important;
-  border: 1px solid #00283D !important;
+.filter-btn {
+  background-color: #00283d !important;
+  border: 1px solid #00283d !important;
   border-radius: 43px !important;
   color: white !important;
   padding-top: 14px !important;
   padding-right: 32px !important;
   padding-bottom: 14px !important;
   padding-left: 32px !important;
-
 }
-.category-heading{
-font-size: 20px;
-font-weight: 500;
-line-height: 30px;
-text-align: left;
-color: #1A1A1A;
-
+.category-heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #1a1a1a;
 }
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   background-color: white !important;
 }
 .accordion-button:focus {
   box-shadow: none !important;
 }
-.accordion-item{
+.accordion-item {
   border: none !important;
 }
-.filter-image{
+.filter-image {
   margin-left: 0.5rem;
 }
-.product-detail{
+.product-detail {
   margin-top: 6rem;
 }
-.social{
+.social {
   display: flex;
   justify-content: space-between;
 }
@@ -396,69 +390,57 @@ color: #1A1A1A;
   border-radius: 5px;
   padding: 16px 40px;
   margin-right: 16px;
-  background-color:#00283D !important;
- 
+  background-color: #00283d !important;
 }
-.radio-input{
+.radio-input {
   margin-right: 0.5rem;
 }
-.custom-text{
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
-text-align: left;
-
+.custom-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
 }
 
- .button-text {
+.button-text {
   margin-right: 16px;
-   margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
-.whilist{
+.whilist {
   background-color: white !important;
   border-color: white !important;
 }
-.text-gray{
+.text-gray {
   color: #808080;
 }
-.text-black{
+.text-black {
   color: black;
 }
-.favourite{
+.favourite {
   margin-left: 1rem;
 }
 
-.product-detail h4{
-font-size: 36px;
-font-weight: 600;
-line-height: 43.2px;
-text-align: left;
-color: #1A1A1A;
+.footer-social {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
 }
-.product-detail .stock{
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
-text-align: left;
-color: #00283D;
-background:#DCE2E6 !important;
-
+.footer-social:hover{
+  background-color: var(--primary-color);
+  transition: ease-out 0.2s;
 }
-.product-detail .sale{
 
-font-size: 14px;
-font-weight: 500;
-line-height: 21px;
-text-align: left;
-color:#EA4B48;
-background-color:#FDEDED !important ;
-
+.footer-social:hover svg path{
+  fill: var(--white-color) !important;
 }
-.product-detail .brand{
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
-text-align: left;
-color: #1A1A1A;
-  }
 
+.subscribe-btn {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  border-radius: 4px;
+
+  margin-left: -20px;
+}

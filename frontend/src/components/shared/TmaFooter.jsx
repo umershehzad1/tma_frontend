@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import logo from "@/assets/logo.png";
+import Subscribe from "./Subscribe";
 const TmaFooter = () => {
     const currentYear = new Date().getFullYear();
   const footerlinks = [
@@ -46,6 +47,7 @@ const TmaFooter = () => {
 
   return (
     <>
+    <Subscribe/>
       <footer style={{ background: "#1A1A1A" }}>
         <Container className="pt-4">
           <Row className="py-4">

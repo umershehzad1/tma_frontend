@@ -42,24 +42,30 @@ const ProductDetail = () => {
           </h4>
         </div>
         <div className="mb-4">
-          <span className="text-gray text-decoration-line-through">N48.00</span>{" "}
+          <span
+            className="text-gray text-decoration-line-through"
+            style={{ fontSize: "20px" }}
+          >
+            N48.00
+          </span>
+          <span className="" style={{ fontSize: "20px" }}>
+            N17.28
+          </span>
           <b>
-            {" "}
-            N17.28{" "}
-            <Badge className="sale" pill>
+            <Badge className="sale mx-2" pill>
               64% Off
             </Badge>
           </b>
         </div>
 
         <hr className="text-gray" />
-  
+
         <div className="mt-4">
           <b style={{ color: "#1A1A1A" }}>Category: </b>
           <span className="font-normal fs-6 text-gray">Vegetable</span>
         </div>
         <div className="mt-4">
-          <b style={{ color: "#1A1A1A" }}>Tag: </b>
+          <b style={{ color: "#1A1A1A", fontSize: "14px" }}>Tag: </b>
           <span className="font-normal fs-6 text-gray">
             Vegetables Healthy
             <span
@@ -74,7 +80,11 @@ const ProductDetail = () => {
         <div className="mt-2">
           <span
             className="mx-1 "
-            style={{ textDecoration: "underline", fontWeight: "bold" }}
+            style={{
+              textDecoration: "underline",
+              fontWeight: "bold",
+              fontSize: "14px",
+            }}
           >
             Delivery
           </span>
