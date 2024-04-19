@@ -611,5 +611,36 @@ opacity: 0px;
 }
   
 
+.label-acct{
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+color: #1A1A1A;
+
+}
+
+.chose-image-button {
+  border-radius: 5px;
+  padding: 12px 40px;
+  background-color: white !important;
+  color:#006BA3 !important;
+  border: 2px solid #006BA3;
+ 
+}
+.chose{
+  margin-left: 4.5rem;
+ 
+}
+.account{
+  border-bottom: 1px solid #E5E5E5;
+  
+}
+.new-address-button {
+  border-radius: 5px;
+  padding: 12px 40px;
+  background-color: #999999 !important;
+}
+
+
   
   
