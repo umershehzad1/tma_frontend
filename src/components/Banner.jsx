@@ -13,7 +13,7 @@ const page = () => {
                     SUMMER SALE
                 </p>
                 <span style={{color:"#FF8A00",fontSize:"56px"}}>37%</span> <span style={{color:"#ffffff",fontSize:"56px"}}>OFF</span>
-                <p style={{color:"#ffffff"}}>Free on all your order, Free Shipping and  30 days <br />money-back guarantee</p>
+                <p style={{color:"#ffffff"}}>Free on all your order, Free Shipping and  30 day <br />money-back guarantee</p>
                 <Col lg = {4}>
                 <button className='mt-3 ' style={{color:"#00283D",fontSize:"16px", width:"100%",borderRadius:"5px",padding:"10px"}}>Shop Now <BsArrowRight/></button>
 
