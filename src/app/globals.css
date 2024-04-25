@@ -74,6 +74,7 @@ html {
   line-height: 16px !important;
   padding: 14px 32px !important;
   border-radius: 5px !important;
+  display: flex;
 }
 
 .types h1 {
@@ -588,18 +589,7 @@ footer ul li a:hover {
 }
 
 
-.navg{
-  width: Fixed (312px)px;
-height: Fixed (391px)px;
-top: 366px;
-left: 58px;
-padding: 0px 0px 12px 0px;
-gap: 0px;
-border-radius: 8px ;
-border: 1px solid #E6E6E6;
-opacity: 0px;
 
-}
 .orderhistory{
   display: flex;
   justify-content: space-between;
@@ -639,6 +629,74 @@ color: #1A1A1A;
   border-radius: 5px;
   padding: 12px 40px;
   background-color: #999999 !important;
+}
+.contact{
+  
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+}
+.accord-header{
+ 
+  color: #00283D;
+ border-top-left-radius: 6px;
+ border-top-right-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 1rem;
+  
+}
+.body-accord{
+  border:1px solid #00283D
+}
+.organic{
+  display: flex;
+}
+.social-card{
+  display: flex;
+}
+.size{
+  background: transparent;
+  background-color:white;
+ 
+  border-radius: 5px;
+ border: 1px solid #E6E6E6;
+ padding: 5px;
+  
+}
+.history-btn{
+  display: flex;
+  justify-content: center;
+}
+.history-payment{
+  display: flex;
+  justify-content: space-between;
+}
+.order-no-button {
+  border-radius: 5px;
+  padding: 8px 50px;
+  background-color: #E3E3E3 !important;
+  color:black;
+  
+}
+.order-yes-button {
+  border-radius: 5px;
+  padding: 8px 50px;
+  background-color: #FF4244 !important;
+  
+  
+}
+.det-hero{
+  margin-top: 10rem;
+  
+}
+.dash-button {
+  border-radius: 5px;
+  padding: 16px 40px;
+  background-color: #00283d !important;
+}
+.view-btn{
+  display: flex;
+  justify-content: end;
 }
 
 

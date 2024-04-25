@@ -106,7 +106,6 @@ const Filter = () => {
             </Accordion.Body>
           </Accordion.Item>
           <hr />
-
           <Accordion.Item eventKey="2">
             <Accordion.Header>
               <h1 className="category-heading">Destination</h1>

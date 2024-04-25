@@ -90,7 +90,6 @@ const OrderSummary = () => {
           </div>
         </div>
         <h5>Payment Method</h5>
-
         {categories.map((category) => (
           <div key={category.value} className="mb-3">
             <Form.Check
@@ -102,7 +101,7 @@ const OrderSummary = () => {
             />
           </div>
         ))}
-         <div>
+        <div>
           <Form.Check
             inline
             label="Save this information"
@@ -111,8 +110,8 @@ const OrderSummary = () => {
           />
         </div>
         <Button className="add-to-cart-button w-100 border-0 my-2">
-            Place Order
-          </Button>
+          Place Order
+        </Button>
       </Card>
     </>
   );

@@ -8,10 +8,10 @@ const page = () => {
     <>
     <Container>
         <Row>
-            <Col xs={12} lg={9}>
+            <Col xs={12} lg={8}>
                 <ShoppingCart/>
             </Col>
-            <Col xs={12} lg={3}>
+            <Col xs={12} lg={4}>
                 <CartTotal/>
             </Col>
         </Row>

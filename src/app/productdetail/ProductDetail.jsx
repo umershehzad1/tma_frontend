@@ -8,12 +8,16 @@ import { Badge, Col, Row } from "react-bootstrap";
 import group from "@/assets/Group.png";
 import cart from "@/assets/whitecart.svg";
 import CartOverlay from "@/components/CartOverlay";
+import SubscribeModal from "./SubscribeModal";
 
 const ProductDetail = () => {
   const [active, setActive] = useState(false);
   const [count, setCount] = useState(0);
   const [showCart, setShowCart] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
+  const handleCloseModal = () => setShowModal(false);
+  const handleShowModal = () => setShowModal(true);
   const handleCartButtonClick = () => {
     setShowCart(true);
   };
@@ -131,11 +135,31 @@ const ProductDetail = () => {
             Delivery
           </span>
         </div>
-        <div className="mt-2 mb-4">
+        <div className="mt-2 mb-2">
           <p style={{ color: "#808080", fontWeight: "400", fontSize: "14px" }}>
             {" "}
             Nationwide Shipping
           </p>
+        </div>
+        <div className="d-flex">
+        <div style={{ marginTop: "0.5rem", marginBottom: "0.5rem" }}> <h1 className=' size text-center px-2 py-1 ' style={{ color: '#1A1A1A', fontWeight: '400', fontSize: '16px', marginRight: '1rem' }}>
+                    S
+                  </h1></div>
+                  <div style={{ marginTop: "0.5rem", marginBottom: "0.5rem" }}> <h1 className=' size text-center px-2 py-1 ' style={{ color: '#1A1A1A', fontWeight: '400', fontSize: '16px', marginRight: '1rem' }}>
+                    M
+                  </h1></div>
+                  <div style={{ marginTop: "0.5rem", marginBottom: "0.5rem" }}> <h1 className=' size text-center px-2 py-1' style={{ color: '#1A1A1A', fontWeight: '400', fontSize: '16px', marginRight: '1rem' }}>
+                    L
+                  </h1></div>
+        </div>
+        <div className="mb-4">
+          <Form.Check
+            inline
+            label="Notify Me when Product is Available"
+            name="group1"
+            type={"checkbox"}
+            onClick={handleShowModal}
+          />
         </div>
         <hr className="text-gray" />
         <Row className="mt-2">
@@ -176,15 +200,8 @@ const ProductDetail = () => {
           </Col>
         </Row>
         <hr className="text-gray" />
-        <div>
-          <Form.Check
-            inline
-            label="Notify Me when Product is Available"
-            name="group1"
-            type={"checkbox"}
-          />
-        </div>
-        <Row className="mt-5">
+        
+        <Row className="mt-4">
           <Col>
             <p
               style={{
@@ -211,6 +228,7 @@ const ProductDetail = () => {
         </Row>
       </div>
       <CartOverlay isOpen={showCart} onClose={handleCloseCart} />
+      <SubscribeModal show={showModal} handleClose={handleCloseModal} />
     </>
   );
 };

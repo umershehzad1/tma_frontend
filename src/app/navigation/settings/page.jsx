@@ -8,14 +8,13 @@ import ChangePassword from "./ChangePassword";
 
 
 
-const page = () => {
+const Settings = () => {
   return (
     <>
     <Container>
         <Row>
-            <Col xs={12} lg={3}>
-            </Col>
-            <Col xs={12} lg={9}>
+            
+            <Col xs={12} lg={12}>
                 <AccountSetting/>
                 <BillingAddress/>
                 <ShippingAddress/>
@@ -27,4 +26,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Settings
