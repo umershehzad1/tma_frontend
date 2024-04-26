@@ -5,7 +5,8 @@ import { BsArrowRight } from "react-icons/bs";
 const page = () => {
 
   return (
-    <div className='background'>
+    <Container>
+           <div className='background'>
         <Container style={{paddingBottom:"50px"}}>
             <Row>
                 <Col lg={5} className='ms-auto'>
@@ -23,6 +24,8 @@ const page = () => {
         </Row>
     </Container>
 </div>
+    </Container>
+ 
   )
 }
 

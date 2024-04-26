@@ -3,6 +3,11 @@ import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import logo from "@/assets/logo.png";
+import ApplePay from "@/assets/ApplePay.svg";
+import Visa from "@/assets/Visa.svg";
+import Discover from "@/assets/Discover.svg";
+import Mastercard from "@/assets/Mastercard.svg";
+import Payment from "@/assets/Payment.svg";
 import Subscribe from "./Subscribe";
 const TmaFooter = () => {
     const currentYear = new Date().getFullYear();
@@ -111,10 +116,11 @@ const TmaFooter = () => {
             </Col>
             <Col xs={12} lg={6}>
               <div className="d-flex justify-content-end">
-                <Image className="mx-2" src={logo} />
-                <Image className="mx-2" src={logo} />
-                <Image className="mx-2" src={logo} />
-                <Image className="mx-2" src={logo} />
+                <Image className="mx-2" src={ApplePay} />
+                <Image className="mx-2" src={Visa} />
+                <Image className="mx-2" src={Discover} />
+                <Image className="mx-2" src={Mastercard} />
+                <Image className="mx-2" src={Payment} />
               </div>
             </Col>
           </Row>

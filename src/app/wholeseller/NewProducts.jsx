@@ -25,6 +25,7 @@ const imageMap = {
 const NewProducts = () => {
     var settings = {
         dots: true,
+        swipeToSlide: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,

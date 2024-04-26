@@ -13,8 +13,11 @@ const Settings = () => {
     <>
     <Container>
         <Row>
+        <Col xs={12} lg={3}>
+        <Navigation/> 
+            </Col>
             
-            <Col xs={12} lg={12}>
+            <Col xs={12} lg={9}>
                 <AccountSetting/>
                 <BillingAddress/>
                 <ShippingAddress/>

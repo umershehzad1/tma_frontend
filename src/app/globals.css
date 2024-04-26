@@ -699,6 +699,35 @@ color: #1A1A1A;
   justify-content: end;
 }
 
+.test{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.test-button {
+ 
+  padding: 0px 0px;
+  background-color: #F2F2F2 !important;
+}
+/* .slick-prev:before {
+  content: '←';
+}
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('../assets/arrowcircle.svg');
+} */
+
+.address-checkbox .form-check-input {
+  
+  margin-top: 16px;
+}
 
   
   

@@ -5,6 +5,9 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import youtube from "@/assets/youtubeicon.svg";
 import Image from "next/image";
 import profile from "@/assets/profile.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const LearnMore = () => {
   //   const vidRef = useRef(null);
   //   const handlePlayVideo = () => {
@@ -35,6 +38,18 @@ const LearnMore = () => {
       },
   ];
 
+  var settings = {
+    dots: true,
+    swipeToSlide: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    controls:true
+};
+
   return (
     <>
       <div className="learn-more">
@@ -47,9 +62,10 @@ const LearnMore = () => {
          
         </Row>
           <Row>
+          <Slider {...settings}>
             {learnmore.map((product, index) => (
-              <Col xs={12} lg={4}>
-                <Card className="my-2">
+              <Col xs={12} lg={10} >
+                <Card className="my-2 mx-2">
                   {/* <video
                   width="320"
                   height="240"
@@ -94,6 +110,7 @@ const LearnMore = () => {
                 </Card>
               </Col>
             ))}
+             </Slider>
           </Row>
         </Container>
       </div>

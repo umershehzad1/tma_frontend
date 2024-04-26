@@ -1,0 +1,70 @@
+"use client";
+import React from "react";
+
+import {Container} from "react-bootstrap";
+import image from "@/assets/image.png";
+import CategoryCard from "./CategoryCard";
+
+
+
+const RelatedProduct = () => {
+    const products = [
+        {
+          sale: "50",
+          title: "Big Potatos",
+          productImage: image,
+          price: 14.9,
+          Oldprice: 16,
+        },
+        {
+          sale: "50",
+          title: "Big Potatos",
+          productImage: image,
+          price: 14.9,
+          Oldprice: 16,
+        },
+        {
+          sale: "50",
+          title: "Big Potatos",
+          productImage: image,
+          price: 14.9,
+          Oldprice: 16,
+        },
+        {
+          sale: "50",
+          title: "Big Potatos",
+          productImage: image,
+          price: 14.9,
+          Oldprice: 16,
+        },
+        
+    
+    
+      
+      ];
+  return (
+    <>
+     <Container>
+        <h1 className="text-center mt-5" style={{fontSize:"24px", fontWeight:"500"}}>Related Products</h1>
+      
+        <div className="d-lg-flex">
+          {products.map((product, index) => (
+            <div key={product.id} className="top-selling-items ms-5">
+             <CategoryCard
+              sale={product.sale}
+              title={product.title}
+              productImage={product.productImage}
+              price={product.price}
+              Oldprice={product.Oldprice}
+              Even={index%2===0?1:2}
+            />
+            </div>
+          ))}
+        </div>
+      </Container>
+ 
+    </>
+  )
+}
+
+export default RelatedProduct

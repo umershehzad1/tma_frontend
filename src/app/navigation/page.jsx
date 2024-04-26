@@ -11,12 +11,10 @@ import Dashboard from "./dashboard/page";
 import Settings from "./settings/page";
 import History from "./history/page";
 
-const page = () => {
+const Navigation = () => {
     return (
         <>
-            <Container>
-                <Row>
-                    <Col xs={12} lg={3} >
+           
                         <Card >
                             <div className=" p-3 mt-3 mb-2">
                                 <div><h5 style={{ fontSize: "20px", fontWeight: "500", color: '#1A1A1A' }}>Navigation</h5></div>
@@ -67,20 +65,13 @@ const page = () => {
 
 
                         </Card>
-                    </Col>
-                    <Col xs={12} lg={9}>
-                        <Dashboard/>
-                        <History/>
-                        <Settings/>
-                    </Col>
-                </Row>
-            </Container>
+                   
 
         </>
     )
 }
 
-export default page
+export default Navigation
 
 
 

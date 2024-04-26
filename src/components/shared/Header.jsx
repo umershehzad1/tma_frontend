@@ -12,9 +12,11 @@ import Link from "next/link";
 import Heart from "@react-sandbox/heart";
 import cart from "@/assets/Bag.svg";
 import CartOverlay from "../CartOverlay";
+import HeartOverlay from "../HeartOverlay";
 function Header() {
   const [active, setActive] = useState(false);
   const [showCart, setShowCart] = useState(false);
+  const [showHeart, setShowHeart] = useState(false);
 
   const handleCartButtonClick = () => {
     setShowCart(true);
@@ -23,6 +25,18 @@ function Header() {
   const handleCloseCart = () => {
     setShowCart(false);
   };
+
+
+
+  const handleHeartButtonClick = () => {
+    setShowHeart(true);
+  };
+
+  const handleCloseHeart = () => {
+    setShowHeart(false);
+  };
+
+  
   const navItems = [
     { title: "Meat", href: "/" },
     { title: "Vegetables", href: "/product" },
@@ -139,13 +153,17 @@ function Header() {
                 </svg>
               </Button>
               <div className="m-2" style={{ borderRight: "2px solid #cccccc" }}>
+                <Button class="bg-transparent border-0 position-relative" >
                 <Heart
                   width={24}
                   height={24}
-                  className="mx-2"
-                  active={active}
-                  onClick={() => setActive(!active)}
+                  className="mx-2 "
+                  // class="bg-transparent border-0 "
+                  // active={active}
+                  onClick={handleHeartButtonClick}
                 />
+                </Button>
+                
               </div>
               <div className="mt-2">
                 <Button
@@ -168,6 +186,7 @@ function Header() {
       </Navbar>
 
       <CartOverlay isOpen={showCart} onClose={handleCloseCart} />
+      <HeartOverlay isOpen={showHeart} onClose={handleCloseHeart} />
     </>
   );
 }
