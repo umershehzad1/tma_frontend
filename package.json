@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^14.1.4",
+    "@next/font": "^14.2.3",
     "@react-sandbox/heart": "^1.1.0",
     "bootstrap": "^5.3.3",
     "multi-range-slider-react": "^2.0.7",

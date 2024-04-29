@@ -10,11 +10,12 @@ const Hero = () => {
     
      
         <Container fluid className="hero ">
-        <Col xs={12} lg={11} className="ms-auto">
-          <Row>
+        <Col xs={12} lg={12} className="ms-auto">
+          <Row className="justify-content-between">
           
-          <Col xs={12} lg={8} className='det-hero '>
-            <div>
+          <Col xs={12} lg={9} className='det-hero '>
+          <Col xs={12} lg={9} className=' mx-auto'>
+          <div>
               <h1>FREE SEATTLE DELIVERY AND RETURNS</h1>
               <p className="tag-line">Bringing the world to you</p>
               <p className="what-we-do">
@@ -29,8 +30,11 @@ const Hero = () => {
                 <Button className="px-5">About Us</Button>
               </div>
             </div>
+
           </Col>
-          <Col xs={12} lg={4} className="p-0">
+          
+          </Col>
+          <Col xs={12} lg={3} className="p-0">
             <div>
             <Image
                   src={hero}

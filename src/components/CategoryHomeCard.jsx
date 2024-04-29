@@ -4,16 +4,21 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import ViewAllHeading from "./ViewAllHeading";
 import Image from "next/image";
 import meat from "@/assets/meat.png";
+import cat1 from "@/assets/cat1.png";
+import cat2 from "@/assets/cat2.png";
+import cat3 from "@/assets/cat3.png";
+import cat4 from "@/assets/cat4.png";
+import cat5 from "@/assets/cat5.png";
 import Link from "next/link";
 import downarrow from "@/assets/arrowdown.svg";
 const CategoryHomeCard = () => {
   const categories = [
     { name: "Meat", image: meat },
-    { name: "Fresh & Vegetables", image: meat },
-    { name: "Fish & Seafoods ", image: meat },
-    { name: "Grains & Flower", image: meat },
-    { name: "Breakfast Food", image: meat },
-    { name: "Seasoning & Oil", image: meat },
+    { name: "Fresh & Vegetables", image: cat1 },
+    { name: "Fish & Seafoods ", image: cat2 },
+    { name: "Grains & Flower", image: cat3 },
+    { name: "Breakfast Food", image: cat4 },
+    { name: "Seasoning & Oil", image: cat5 },
   ];
   return (
     <>

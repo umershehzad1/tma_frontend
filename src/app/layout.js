@@ -1,15 +1,16 @@
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "@/components/shared/Header";
 import TmaFooter from "@/components/shared/TmaFooter";
-export const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
+// export const inter = Inter({
+//   subsets: ["latin"],
+//   display: "swap",
+// });
 
-export const roboto_mono = Roboto_Mono({
+export const rock = Poppins({
   subsets: ["latin"],
+  weight:["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -21,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={rock.className}>
         <Header />
         {children}
         <TmaFooter />
