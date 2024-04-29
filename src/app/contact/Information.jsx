@@ -12,6 +12,8 @@ const Information = () => {
       <Row>
         <Col xs={12} lg={6}>
           <h1 style={{ color: "#1A1A1A", fontWeight: "600", fontSize: "48px", lineHeight: '57.6px', marginTop: '1.5rem' }}>Welcome, Let’s Talk <br /> About Our TMA Global</h1>
+          
+          <div className="fqa">
           <Accordion>
             <Accordion.Item eventKey="0" className="mb-2">
               <Accordion.Header className="accord-header">In elementum est a ante sodales iaculis.
@@ -59,6 +61,7 @@ const Information = () => {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
+          </div>
         </Col>
         <Col xs={12} lg={6}>
           <Image

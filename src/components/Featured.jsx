@@ -5,6 +5,9 @@ import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 import cart from "../assets/cart.svg";
 import image from "../assets/image.png";
+import View from "../assets/View.png";
+import Wishlist from "../assets/Wishlist.png";
+
 const Featured = () => {
   const products = [
     {
@@ -20,17 +23,15 @@ const Featured = () => {
 
   return (
     <>
-      {/* <Container>
-        <ViewAllHeading title="Featured Products" viewAllLink="/" />
-        <Row>
-          <Col xs={4}>
+     
+          
             {products.map((product, index) => (
               <div key={product.id}>
-                <Card
+                <Card style={{minHeight:"570px"}}
                   className={` ${
                     index % 2 === 0
-                      ? "even-card my-2 position-relative rounded-0"
-                      : "odd-card my-2 position-relative rounded-0"
+                      ? "even-card  position-relative rounded-0"
+                      : "odd-card  position-relative rounded-0"
                   }`}
                 >
                   <div
@@ -81,7 +82,7 @@ const Featured = () => {
                   <Row>
                     <Col xs={2}>
                       <Image
-                        src={cart}
+                        src={Wishlist}
                         width={15}
                         height={15}
                         alt={product.name}
@@ -101,7 +102,7 @@ const Featured = () => {
                     </Col>
                     <Col xs={2}>
                       <Image
-                        src={cart}
+                        src={View}
                         width={15}
                         height={15}
                         alt={product.name}
@@ -152,10 +153,8 @@ const Featured = () => {
                 </Card>
               </div>
             ))}
-          </Col>
-        </Row>
-        <div className="d-lg-flex"></div>
-      </Container> */}
+          
+      
     </>
   );
 };

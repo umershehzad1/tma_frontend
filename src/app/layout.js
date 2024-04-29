@@ -3,10 +3,7 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "@/components/shared/Header";
 import TmaFooter from "@/components/shared/TmaFooter";
-// export const inter = Inter({
-//   subsets: ["latin"],
-//   display: "swap",
-// });
+
 
 export const rock = Poppins({
   subsets: ["latin"],

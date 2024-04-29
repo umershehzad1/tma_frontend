@@ -1,12 +1,15 @@
 "use client"
 
-import React from 'react'
+import React, { useState } from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 import { Form,InputGroup } from 'react-bootstrap'
 import { FiEye } from 'react-icons/fi'
 import { BsGoogle } from "react-icons/bs";
 
 const page = () => {
+  const [value, setValue] = useState()
   return (
     <Container style={{paddingBottom:"60px", }}>
 
@@ -19,6 +22,17 @@ const page = () => {
         <h1>Create Account</h1>
     </Card.Title>
     <Form>
+      <div className='number mt-4'>
+      <PhoneInput
+      placeholder="Enter phone number"
+      defaultCountry='US'
+     
+      value={value}
+      onChange={setValue}/>
+      </div>
+    
+   
+      
         
   <Form.Group className="mb-3 mt-4" controlId="exampleForm.ControlInput1">
     <Form.Control type="text" placeholder="Name"  className='p-3'/>

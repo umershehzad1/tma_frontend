@@ -13,7 +13,7 @@ import Instagram from "@/components/Instagram";
 import Featured from "@/components/Featured";
 import Banner from "@/components/Banner";
 import Testomonials from "@/components/Testomonials";
-import CategoryCard from "@/components/shared/CategoryCard";
+import FeaturedProduct from "@/components/FeaturedProduct";
 const page = () => {
   return (
     <>
@@ -21,12 +21,13 @@ const page = () => {
       <Hero />
       <Perks />
       <CategoryHomeCard />
-      <Featured />
+      <FeaturedProduct/>
+      {/* <Featured /> */}
       <NewlyAdded />
 
-      {/* <CategoryCard/> */}
       <RecentSearch />
       <LearnMore />
+
       <TopSelling />
       <Banner/>
       <LimitedStock />
