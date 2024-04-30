@@ -9,7 +9,7 @@ const History = () => {
    <Container>
     <Row>
     <Col xs={12} lg={3}>
-    <Navigation/>
+    {/* <Navigation/> */}
         </Col>
         
         <Col xs={12} lg={9}>

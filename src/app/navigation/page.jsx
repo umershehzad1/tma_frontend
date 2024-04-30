@@ -18,7 +18,7 @@ const Navigation = () => {
                         <Card >
                             <div className=" p-3 mt-3 mb-2">
                                 <div><h5 style={{ fontSize: "20px", fontWeight: "500", color: '#1A1A1A' }}>Navigation</h5></div>
-                                   <Link style={{color:'white'}} href="navigation/dashboard">
+                                   <Link style={{color:'white'}} href="/navigation/dashboard">
                                    <div className='d-flex mt-4'>
                                     <div >
                                         <Image src={dash} width={0} height={0} sizes='100vw' alt='product' />
@@ -29,7 +29,7 @@ const Navigation = () => {
                                 </div>
                                    </Link>
                               
-                                   <Link style={{color:'white'}} href="navigation/history">
+                                   <Link style={{color:'white'}} href="/navigation/history">
                                 <div className='d-flex mt-4'>
                                     <div >
                                         <Image src={history} width={0} height={0} sizes='100vw' alt='product' />
@@ -39,7 +39,7 @@ const Navigation = () => {
                                     </div>
                                 </div>
                                 </Link>
-                                <Link style={{color:'white'}} href="navigation/settings">
+                                <Link style={{color:'white'}} href="/navigation/settings">
 
                                 <div className='d-flex mt-4'>
                                     <div >
