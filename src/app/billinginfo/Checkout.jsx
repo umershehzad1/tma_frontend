@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
 import Form from "react-bootstrap/Form";
-
-import {Col, Row } from "react-bootstrap";
-
+import { Col, Row } from "react-bootstrap";
 const Checkout = () => {
   return (
     <>
@@ -40,13 +38,10 @@ const Checkout = () => {
               </Form.Group>
             </Col>
           </Row>
-
- 
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email</Form.Label>
-              <Form.Control size="lg" type="email" placeholder="Email" />
-            </Form.Group>
-        
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>Email</Form.Label>
+            <Form.Control size="lg" type="email" placeholder="Email" />
+          </Form.Group>
           <Row>
             <Col lg={6}>
               <Form.Group
@@ -91,16 +86,12 @@ const Checkout = () => {
               </Form.Group>
             </Col>
           </Row>
-
-      
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Street Address</Form.Label>
-              <Form.Control size="lg" type="email" placeholder="Address" />
-            </Form.Group>
-          
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>Street Address</Form.Label>
+            <Form.Control size="lg" type="email" placeholder="Address" />
+          </Form.Group>
         </Col>
       </Form>
-
       <hr className="text-gray" />
     </>
   );

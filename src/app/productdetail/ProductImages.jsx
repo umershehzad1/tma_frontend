@@ -1,6 +1,9 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import leaf from "@/assets/leaf.png";
+import img1 from "@/assets/img1.png";
+import img2 from "@/assets/img2.png";
+import img3 from "@/assets/img3.png";
 import Image from "next/image";
 const ProductImage = () => {
   return (
@@ -17,7 +20,7 @@ const ProductImage = () => {
       <Row className="mb-2">
         <Col lg={6} className="pe-0">
           <Image
-            src={leaf}
+            src={img1}
             width={0}
             height={0}
             sizes="100vw"
@@ -27,7 +30,7 @@ const ProductImage = () => {
         </Col>
         <Col lg={6} className="ps-0">
           <Image
-            src={leaf}
+            src={img2}
             width={0}
             height={0}
             sizes="100vw"
@@ -38,7 +41,7 @@ const ProductImage = () => {
       </Row>
 
       <Image
-        src={leaf}
+        src={img3}
         width={0}
         height={0}
         sizes="100vw"

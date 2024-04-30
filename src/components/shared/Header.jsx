@@ -12,9 +12,11 @@ import Link from "next/link";
 import Heart from "@react-sandbox/heart";
 import cart from "@/assets/Bag.svg";
 import CartOverlay from "../CartOverlay";
+import HeartOverlay from "../HeartOverlay";
 function Header() {
   const [active, setActive] = useState(false);
   const [showCart, setShowCart] = useState(false);
+  const [showHeart, setShowHeart] = useState(false);
 
   const handleCartButtonClick = () => {
     setShowCart(true);
@@ -23,21 +25,33 @@ function Header() {
   const handleCloseCart = () => {
     setShowCart(false);
   };
+
+
+
+  const handleHeartButtonClick = () => {
+    setShowHeart(true);
+  };
+
+  const handleCloseHeart = () => {
+    setShowHeart(false);
+  };
+
+  
   const navItems = [
-    { title: "Meat", href: "/" },
-    { title: "Vegetables", href: "/product" },
-    { title: "Fish & Seafoods ", href: "/productdetail" },
-    { title: "Grains & Flowers", href: "/billinginfo" },
-    { title: "Breakfast", href: "#" },
-    { title: "Seasoning & Oil", href: "#" },
+    { title: "Meat", href: "/meat" },
+    { title: "Vegetables", href: "/vegetable" },
+    { title: "Fish & Seafoods ", href: "/fishandseafood" },
+    { title: "Grains & Flowers", href: "/grainandflower" },
+    { title: "Breakfast", href: "/breakfast" },
+    { title: "Seasoning & Oil", href: "/seasoningandoil" },
     {
       title: "Others",
       items: [
-        { title: "Drinks", href: "#" },
+        { title: "Drinks", href: "/drink" },
         { title: "Snacks & Sweets", href: "#" },
-        { title: "Canned Foods", href: "#" },
-        { title: "Pasta & Noodles", href: "#" },
-        { title: "Cosmetics", href: "#" },
+        { title: "Canned Foods", href: "/cannedfood" },
+        { title: "Pasta & Noodles", href: "/pastanoodle" },
+        { title: "Cosmetics", href: "/cosmetic" },
       ],
     },
   ];
@@ -49,7 +63,7 @@ function Header() {
           <div className="pt-1">
             <Link
               className="text-decoration-none"
-              href=""
+              href="/signin"
               style={{ fontSize: "14px", color: "#666666" }}
             >
               Sign In
@@ -57,7 +71,7 @@ function Header() {
             <span className="footer-links-color mx-2">/</span>
             <Link
               className="text-decoration-none"
-              href=""
+              href="/signup"
               style={{ fontSize: "14px", color: "#666666" }}
             >
               Sign Up
@@ -139,13 +153,17 @@ function Header() {
                 </svg>
               </Button>
               <div className="m-2" style={{ borderRight: "2px solid #cccccc" }}>
+                <Button class="bg-transparent border-0 position-relative" >
                 <Heart
                   width={24}
                   height={24}
-                  className="mx-2"
-                  active={active}
-                  onClick={() => setActive(!active)}
+                  className="mx-2 "
+                  // class="bg-transparent border-0 "
+                  // active={active}
+                  onClick={handleHeartButtonClick}
                 />
+                </Button>
+                
               </div>
               <div className="mt-2">
                 <Button
@@ -168,6 +186,7 @@ function Header() {
       </Navbar>
 
       <CartOverlay isOpen={showCart} onClose={handleCloseCart} />
+      <HeartOverlay isOpen={showHeart} onClose={handleCloseHeart} />
     </>
   );
 }

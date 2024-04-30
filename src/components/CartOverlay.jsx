@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 import { Button, Col, Row } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import productImage from "@/assets/image.png";
@@ -117,10 +118,13 @@ const CartOverlay = ({ isOpen, onClose }) => {
               </small>
             </div>
           </div>
+          <Link href="/billinginfo">
           <Button className="add-to-cart-button w-100 border-0 my-2">
             Checkout
-          </Button>
+          </Button></Link>
+          <Link href="/checkout">
           <Button className="go-to-cart w-100 border-0">Go To Cart</Button>
+          </Link>
         </Offcanvas.Body>
       </Offcanvas>
     </>

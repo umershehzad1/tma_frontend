@@ -2,33 +2,39 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import picture from "@/assets/typefirst.png";
+import Post1 from "@/assets/Post1.png";
+import Post2 from "@/assets/Post2.png";
+import Post3 from "@/assets/Post3.png";
+import Post4 from "@/assets/Post4.png";
+import Post5 from "@/assets/Post5.png";
+import Post6 from "@/assets/Post6.png";
 import Link from "next/link";
 import instagram from "@/assets/instagram-light.svg";
 import instadark from "@/assets/instagram-dark.svg";
 const Instagram = () => {
     const follow=[
         {
-            image:picture,
+            image:Post1,
             link:"#"
         },
         {
-            image:picture,
+            image:Post6,
             link:"#"
         },
         {
-            image:picture,
+            image:Post3,
             link:"#"
         },
         {
-            image:picture,
+            image:Post4,
             link:"#"
         },
         {
-            image:picture,
+            image:Post5,
             link:"#"
         },
         {
-            image:picture,
+            image:Post6,
             link:"#"
         },
     ]
@@ -45,7 +51,7 @@ const Instagram = () => {
         </Row>
         <Row className="pb-5">
           {follow.map((follow, index) => (
-            <Col xs={2}>
+            <Col xs={6} lg={2}>
               <div className="instaouter position-relative">
                 <Image
                   src={follow.image}

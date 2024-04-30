@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
-
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-
-import {  Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const Shiping = () => {
   return (
@@ -49,12 +47,10 @@ const Shiping = () => {
               </Form.Group>
             </Col>
           </Row>
-
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Email</Form.Label>
             <Form.Control size="lg" type="email" placeholder="Email" />
           </Form.Group>
-
           <Row>
             <Col xs={12} lg={6}>
               <Form.Group
@@ -85,12 +81,19 @@ const Shiping = () => {
               </Form.Group>
             </Col>
           </Row>
-
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Street Address</Form.Label>
             <Form.Control size="lg" type="email" placeholder="Address" />
           </Form.Group>
-
+          <div className="mb-4">
+          <Form.Check
+            inline
+            label="Save Address for future"
+            name="group1"
+            type={"checkbox"}
+            
+          />
+        </div>
           <Col xs={12} lg={8} className="mt-4">
             <Button className="add-to-cart-button border-0">
               Add Shipping Information
@@ -108,7 +111,6 @@ const Shiping = () => {
             Additional Info
           </h1>
         </div>
-
         <Form.Group
           className="mb-3 mt-4"
           controlId="exampleForm.ControlTextarea1"

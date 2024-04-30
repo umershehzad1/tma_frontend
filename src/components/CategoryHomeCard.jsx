@@ -4,16 +4,21 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import ViewAllHeading from "./ViewAllHeading";
 import Image from "next/image";
 import meat from "@/assets/meat.png";
+import cat1 from "@/assets/cat1.png";
+import cat2 from "@/assets/cat2.png";
+import cat3 from "@/assets/cat3.png";
+import cat4 from "@/assets/cat4.png";
+import cat5 from "@/assets/cat5.png";
 import Link from "next/link";
 import downarrow from "@/assets/arrowdown.svg";
 const CategoryHomeCard = () => {
   const categories = [
-    { name: "Meat", image: meat },
-    { name: "Fresh & Vegetables", image: meat },
-    { name: "Fish & Seafoods ", image: meat },
-    { name: "Grains & Flower", image: meat },
-    { name: "Breakfast Food", image: meat },
-    { name: "Seasoning & Oil", image: meat },
+    { name: "Meat", image: meat,link:"/meat" },
+    { name: "Fresh & Vegetables", image: cat1, link:"/vegetable" },
+    { name: "Fish & Seafoods ", image: cat2, link:"/fishandseafood" },
+    { name: "Grains & Flower", image: cat3, link:"/grainandflower" },
+    { name: "Breakfast Food", image: cat4, link:"/breakfast" },
+    { name: "Seasoning & Oil", image: cat5, link:"/seasoningandoil" },
   ];
   return (
     <>
@@ -22,7 +27,7 @@ const CategoryHomeCard = () => {
         <Row>
           {categories.map((category, index) => (
             <Col xs={6} lg={2} key={index}>
-              <Card className="pt-2 my-2">
+              <Card className="pt-2 my-2" as={Link} href={category?.link}>
                 <div
                   style={{
                     width: "80%",
@@ -78,3 +83,8 @@ const CategoryHomeCard = () => {
 };
 
 export default CategoryHomeCard;
+
+
+
+
+

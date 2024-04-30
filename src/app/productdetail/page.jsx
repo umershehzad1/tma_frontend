@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ProductImage from "./ProductImages";
 import ProductDetail from "./ProductDetail";
+import RelatedProduct from "@/components/shared/RelatedProduct";
 const page = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const page = () => {
             <ProductDetail />
           </Col>
         </Row>
+        <RelatedProduct/>
       </Container>
     </>
   );

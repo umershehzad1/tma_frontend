@@ -10,7 +10,7 @@ const Subscribe = () => {
           <Row className="py-2">
             <Col xs={12} lg={5}>
               <div>
-                <h4>Subscribe Our Social Media Pages</h4>
+                <h4 style={{fontSize:"24px", fontWeight:"600"}}>Subscribe Our Social Media Pages</h4>
                 <p className="text-gray">
                   Pellentesque eu nibh eget mauris congue mattis mattis nec
                   tellus. Phasellus imperdiet elit eu magna.
