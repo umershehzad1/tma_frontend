@@ -13,12 +13,12 @@ import Link from "next/link";
 import downarrow from "@/assets/arrowdown.svg";
 const CategoryHomeCard = () => {
   const categories = [
-    { name: "Meat", image: meat },
-    { name: "Fresh & Vegetables", image: cat1 },
-    { name: "Fish & Seafoods ", image: cat2 },
-    { name: "Grains & Flower", image: cat3 },
-    { name: "Breakfast Food", image: cat4 },
-    { name: "Seasoning & Oil", image: cat5 },
+    { name: "Meat", image: meat,link:"/meat" },
+    { name: "Fresh & Vegetables", image: cat1, link:"/vegetable" },
+    { name: "Fish & Seafoods ", image: cat2, link:"/fishandseafood" },
+    { name: "Grains & Flower", image: cat3, link:"/grainandflower" },
+    { name: "Breakfast Food", image: cat4, link:"/breakfast" },
+    { name: "Seasoning & Oil", image: cat5, link:"/seasoningandoil" },
   ];
   return (
     <>
@@ -27,7 +27,7 @@ const CategoryHomeCard = () => {
         <Row>
           {categories.map((category, index) => (
             <Col xs={6} lg={2} key={index}>
-              <Card className="pt-2 my-2">
+              <Card className="pt-2 my-2" as={Link} href={category?.link}>
                 <div
                   style={{
                     width: "80%",
@@ -83,3 +83,8 @@ const CategoryHomeCard = () => {
 };
 
 export default CategoryHomeCard;
+
+
+
+
+

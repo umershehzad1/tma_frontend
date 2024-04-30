@@ -38,20 +38,20 @@ function Header() {
 
   
   const navItems = [
-    { title: "Meat", href: "/" },
-    { title: "Vegetables", href: "/product" },
-    { title: "Fish & Seafoods ", href: "/productdetail" },
-    { title: "Grains & Flowers", href: "/billinginfo" },
-    { title: "Breakfast", href: "#" },
-    { title: "Seasoning & Oil", href: "#" },
+    { title: "Meat", href: "/meat" },
+    { title: "Vegetables", href: "/vegetable" },
+    { title: "Fish & Seafoods ", href: "/fishandseafood" },
+    { title: "Grains & Flowers", href: "/grainandflower" },
+    { title: "Breakfast", href: "/breakfast" },
+    { title: "Seasoning & Oil", href: "/seasoningandoil" },
     {
       title: "Others",
       items: [
-        { title: "Drinks", href: "#" },
+        { title: "Drinks", href: "/drink" },
         { title: "Snacks & Sweets", href: "#" },
-        { title: "Canned Foods", href: "#" },
-        { title: "Pasta & Noodles", href: "#" },
-        { title: "Cosmetics", href: "#" },
+        { title: "Canned Foods", href: "/cannedfood" },
+        { title: "Pasta & Noodles", href: "/pastanoodle" },
+        { title: "Cosmetics", href: "/cosmetic" },
       ],
     },
   ];
@@ -63,7 +63,7 @@ function Header() {
           <div className="pt-1">
             <Link
               className="text-decoration-none"
-              href=""
+              href="/signin"
               style={{ fontSize: "14px", color: "#666666" }}
             >
               Sign In
@@ -71,7 +71,7 @@ function Header() {
             <span className="footer-links-color mx-2">/</span>
             <Link
               className="text-decoration-none"
-              href=""
+              href="/signup"
               style={{ fontSize: "14px", color: "#666666" }}
             >
               Sign Up

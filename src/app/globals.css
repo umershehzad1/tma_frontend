@@ -757,14 +757,24 @@ color: #1A1A1A;
 
 
 .slick-prev:before, .slick-next:before {
-  font-family: 'slick';
-  font-size: 20px;
-  line-height: 1;
-  opacity: .75;
+ 
   color: black !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
 }
-.slick-prev:before {
+/* .slick-prev:before {
   content: '←';
+} */
+.form-check-input:checked {
+  background-color: #36C63F !important;
+  border-color: none !important;
+}
+a {
+  text-decoration: none !important ;
+}
+.term-text{
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

@@ -5,6 +5,7 @@ import { Button, Col, Row } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import productImage from "@/assets/image.png";
 import closebtn from "@/assets/cancelproduct.svg";
+import Link from "next/link";
 import cart from "@/assets/Bag.svg"
 
 const HeartOverlay = ({ isOpen, onClose }) => {
@@ -107,9 +108,12 @@ const HeartOverlay = ({ isOpen, onClose }) => {
               </small>
             </div>
           </div>
+          <Link href="/checkout">
           <Button className="add-to-cart-button w-100 border-0 my-2">
             Add all to Cart
           </Button>
+          </Link>
+         
           
         </Offcanvas.Body>
       </Offcanvas>

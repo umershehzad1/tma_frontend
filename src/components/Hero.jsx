@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import hero from "@/assets/heropng.png"
 import Image from "next/image";
+import Link from "next/link";
 const Hero = () => {
   return (
     <>
@@ -26,9 +27,10 @@ const Hero = () => {
               <div className="mt-2">
                 <Button>See All Products</Button>
               </div>
-              <div className="ms-lg-4 ms-0 mt-2">
+              <Link  href="/about" > <div className="ms-lg-4 ms-0 mt-2">
                 <Button className="px-5">About Us</Button>
-              </div>
+              </div></Link>
+             
             </div>
 
           </Col>

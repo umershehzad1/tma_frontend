@@ -122,7 +122,7 @@ const page = () => {
   </div>
   <div style={{ display: "flex", }}>
     <div>
-      <h4 style={{ color: "#1A1A1A", fontSize: "16px",marginRight:"73px" }}>
+      < h4 className='ms-2' style={{ color: "#1A1A1A", fontSize: "16px",marginRight:"73px" }}>
       Dianne Russell           
        <p style={{ color: "#999999", fontSize: "14px" }}>Customer</p>
       </h4>

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 import { Card, Col, Row } from "react-bootstrap";
 import cart from "@/assets/cart.svg";
 const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
@@ -33,7 +34,7 @@ const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
         ) : (
           ""
         )}
-
+        <Link href='/productdetail'>
         <Image
           src={productImage}
           width={0}
@@ -41,12 +42,16 @@ const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
           alt={title}
           style={{ objectFit: "cover", height: "100%", width: "100%" }}
         />
+        </Link>
+       
         <Card.Body>
           <Row>
             <Col xs={9}>
+            <Link href='/productdetail'>
               <Card.Text className="m-0" style={{ cursor: "pointer" }}>
                 {title}
               </Card.Text>
+              </Link>
               <Card.Title className="fs-6">
                 N{price?.toFixed(2)}
                 <small className="text-muted text-decoration-line-through mx-2">
@@ -55,6 +60,7 @@ const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
               </Card.Title>
             </Col>
             <Col xs={3}>
+              
               <Image
                 src={cart}
                 width={50}
@@ -62,6 +68,8 @@ const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
                 alt="Add to Cart"
                 style={{ cursor: "pointer" }}
               />
+              
+              
             </Col>
           </Row>
         </Card.Body>

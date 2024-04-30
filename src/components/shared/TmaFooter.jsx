@@ -15,37 +15,37 @@ const TmaFooter = () => {
     {
       title: "My Account",
       links: [
-        { text: "My Account", href: "#" },
-        { text: "Order History", href: "#" },
-        { text: "Shoping Cart", href: "#" },
+        { text: "My Account", href: "/navigation/dashboard" },
+        { text: "Order History", href: "/navigation/history" },
+        { text: "Shoping Cart", href: "/checkout" },
         { text: "Wishlist", href: "#" },
       ],
     },
     {
       title: "Helps",
       links: [
-        { text: "Contact", href: "#" },
-        { text: "Faqs", href: "#" },
-        { text: "Terms & Condition", href: "#" },
-        { text: "Privacy Policy", href: "#" },
+        { text: "Contact", href: "/contact" },
+        { text: "Faqs", href: "/faq" },
+        { text: "Terms & Condition", href: "/termandcondition" },
+        { text: "Privacy Policy", href: "/privacypolicy" },
       ],
     },
     {
       title: "Proxy",
       links: [
-        { text: "About", href: "#" },
+        { text: "About", href: "/about" },
         { text: "Shop", href: "#" },
-        { text: "Product", href: "#" },
+        { text: "Product", href: "/productdetail" },
         { text: "Track Order", href: "#" },
       ],
     },
     {
       title: "Categories",
       links: [
-        { text: "Meat", href: "#" },
-        { text: "Fresh Vegetables", href: "#" },
-        { text: "Fish & Seafoods", href: "#" },
-        { text: "Grains & Flower", href: "#" },
+        { text: "Meat", href: "/meat" },
+        { text: "Fresh Vegetables", href: "/vegetable" },
+        { text: "Fish & Seafoods", href: "fishandseafood" },
+        { text: "Grains & Flower", href: "/grainandflower" },
       ],
     },
   ];

@@ -4,6 +4,7 @@ import showmore from "@/assets/white-arrow.svg";
 import Image from "next/image";
 import firsttype from "@/assets/typefirst.png";
 import vegetable from "@/assets/vegetableside.png";
+import Link from "next/link";
 const Types = () => {
   return (
     <>
@@ -16,12 +17,15 @@ const Types = () => {
                 Create your own product and love your self and describe yourself
                 and love yourself
               </p>
+              <Link href='/meat'>
               <Button>
                 Shop Now
                 <span className="ms-2">
                   <Image src={showmore} width={13} height={13} alt="shipping" />
                 </span>
               </Button>
+              </Link>
+              
             </div>
           </Col>
           <Col xs={12} lg={3}>
@@ -74,6 +78,7 @@ const Types = () => {
                   Health is the most important thing in the life of every human
                   being. Shop your Favorite Vegetables Now.
                 </p>
+                <Link href='/vegetable'>
                 <Button>
                   Shop Now
                   <span className="ms-2">
@@ -85,6 +90,8 @@ const Types = () => {
                     />
                   </span>
                 </Button>
+                </Link>
+              
               </div>
             </Col>
           </Col>

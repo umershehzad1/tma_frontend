@@ -4,9 +4,10 @@ import ViewAllHeading from "./ViewAllHeading";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 import cart from "../assets/cart.svg";
+import Link from "next/link";
 import image from "../assets/image.png";
-import View from "../assets/View.png";
-import Wishlist from "../assets/Wishlist.png";
+import View from "../assets/View1.svg";
+import Wishlist from "../assets/Wishlist1.svg";
 
 const Featured = () => {
   const products = [
@@ -81,6 +82,7 @@ const Featured = () => {
 
                   <Row>
                     <Col xs={2}>
+                     
                       <Image
                         src={Wishlist}
                         width={15}
@@ -95,12 +97,18 @@ const Featured = () => {
                     </Col>
                     <Col xs={8}>
                       <div>
+                        <Link href="/checkout">
                         <Button className="w-100 featured-btn">
                           Add to Cart
                         </Button>
+                        </Link>
+                       
                       </div>
                     </Col>
-                    <Col xs={2}>
+                    <Col xs={2} >
+
+                      <Link href='/productdetail'>
+                     
                       <Image
                         src={View}
                         width={15}
@@ -110,8 +118,14 @@ const Featured = () => {
                           objectFit: "cover",
                           height: "100%",
                           width: "100%",
+                         
+                          
                         }}
                       />
+                      
+                      </Link>
+                     
+                     
                     </Col>
                   </Row>
 

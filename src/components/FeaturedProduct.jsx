@@ -12,7 +12,9 @@ import FeaturedCard from "./shared/FeaturedCard";
 const FeaturedProduct = () => {
   return (
     <>
-      <Container>
+    
+<section style={{backgroundColor:"#F7F7F7", paddingTop:"2rem", paddingBottom:"2rem"}}>
+<Container>
         <ViewAllHeading
           title="Featured Products"
           viewAllLink="/"
@@ -26,7 +28,7 @@ const FeaturedProduct = () => {
             <Row className="p-0" >
               <Col lg={4} className="p-0" >
                 <FeaturedCard
-                  sale="50"
+                 
                   title="Red Chilli"
                   productImage={image}
                   price={788}
@@ -37,7 +39,7 @@ const FeaturedProduct = () => {
 
               <Col lg={4} className="p-0" >    
                  <FeaturedCard
-                sale="50"
+               
                 title="Red Chilli"
                 productImage={image}
                 price={788}
@@ -47,7 +49,7 @@ const FeaturedProduct = () => {
 
               <Col lg={4} className="p-0" >
               <FeaturedCard
-                  sale="50"
+                 
                   title="Red Chilli"
                   productImage={image}
                   price={788}
@@ -60,7 +62,7 @@ const FeaturedProduct = () => {
             <Row className="p-0"  >
               <Col lg={4} className="p-0">
               <FeaturedCard
-                  sale="50"
+                 
                   title="Red Chilli"
                   productImage={image}
                   price={788}
@@ -82,7 +84,7 @@ const FeaturedProduct = () => {
 
               <Col lg={4} className="p-0" >
               <FeaturedCard
-                  sale="50"
+                 
                   title="Red Chilli"
                   productImage={image}
                   price={788}
@@ -97,6 +99,11 @@ const FeaturedProduct = () => {
 
         </Row>
       </Container>
+</section>
+    
+  
+     
+    
 
     </>
   )

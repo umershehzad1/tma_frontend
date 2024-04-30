@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import cart from "@/assets/cart.svg";
+import Link from "next/link";
 
 const FeaturedCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
     return (
@@ -33,6 +34,7 @@ const FeaturedCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
                 ) : (
                     ""
                 )}
+                <Link href="/productdetail">
                 <div style={{ height: "200px", overflow: "hidden" }}>
                     <Image
                         src={productImage}
@@ -41,13 +43,17 @@ const FeaturedCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
                         alt={title}
                         style={{ objectFit: "cover", height: "100%", width: "100%" }}
                     /></div>
+                </Link>
+                
 
                 <Card.Body>
                     <Row>
                         <Col xs={9}>
+                        <Link href="/productdetail">
                             <Card.Text className="m-0" style={{ cursor: "pointer" }}>
                                 {title}
                             </Card.Text>
+                            </Link>
                             <Card.Title className="fs-6">
                                 N{price?.toFixed(2)}
                                 <small className="text-muted text-decoration-line-through mx-2">
