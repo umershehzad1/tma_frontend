@@ -11,7 +11,7 @@ const RelatedProduct = () => {
    
   return (
     <>
-     <Container>
+     <Container className="d-none d-md-block ">
         <h1 className="text-center mt-5" style={{fontSize:"24px", fontWeight:"500"}}>Related Products</h1>
         <Row>
           <Col lg={3}>

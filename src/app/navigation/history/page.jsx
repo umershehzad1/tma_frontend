@@ -2,6 +2,7 @@
 import React from 'react'
 import { Col, Container, Row } from "react-bootstrap";
 import OrderDetail from './OrderDetail';
+import Navigation from "../page";
 
 const History = () => {
   return (

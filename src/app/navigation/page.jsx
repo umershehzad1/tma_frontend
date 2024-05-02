@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import { Card, Container, Col, Row } from "react-bootstrap";
+import { Card} from "react-bootstrap";
 import dash from "@/assets/dash.svg";
 import history from "@/assets/history.png";
 import setting from "@/assets/setting.png";

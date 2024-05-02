@@ -12,7 +12,7 @@ const page = () => {
   return (
     <Container style={{paddingBottom:"60px"}}>
       <Row>
-        <Col lg = {5} className='mx-auto'>
+        <Col  lg = {5} className='mx-auto'>
         <Card style={{ width: '40rem',boxShadow:"0px 0px 56px 0px #00260314",backgroundColor:"#FFFFFF", }} className='border-rounded'>
       <Card.Body>
         <Card.Title className='text-center'>

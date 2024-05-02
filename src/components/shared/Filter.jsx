@@ -1,11 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
-import Button from "react-bootstrap/Button";
-import filter from "@/assets/filter.svg";
 import Accordion from "react-bootstrap/Accordion";
 import MultiRangeSlider from "multi-range-slider-react";
 import { Form } from "react-bootstrap";
+
 
 const Filter = () => {
   const [minValue, set_minValue] = useState(0);
@@ -31,19 +29,11 @@ const Filter = () => {
     set_maxValue(e.maxValue);
   };
 
+
   return (
     <>
       <div className="filter">
-        <Button className="filter-btn">
-          Filter
-          <Image
-            className="filter-image mx-2"
-            src={filter}
-            width={20}
-            height={20}
-            alt="team"
-          />
-        </Button>
+        
         <Accordion className="custom-accordion " defaultActiveKey="0">
           <Accordion.Item eventKey="0">
             <Accordion.Header>
@@ -149,6 +139,7 @@ const Filter = () => {
           </div>
         </Accordion>
       </div>
+      
     </>
   );
 };

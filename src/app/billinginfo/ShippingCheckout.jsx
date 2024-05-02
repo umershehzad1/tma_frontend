@@ -5,7 +5,7 @@ import React from "react";
 import { Button, Form } from "react-bootstrap";
 import productImage from "@/assets/image.png";
 
-const page = () => {
+const ShippingCheckout = () => {
     const [selectedCategory, setSelectedCategory] = React.useState("");
   
   
@@ -17,8 +17,8 @@ const page = () => {
       setSelectedCategory(e.target.value);
     };
   return (
- <>
-  <Container>
+   <>
+    <Container>
     <Row>
         <Col xs={12} lg={8}>
         <h5 style={{fontSize:"24px", fontWeight:"500"}}>Shipping Information</h5>
@@ -49,14 +49,8 @@ const page = () => {
         </Col>
     </Row>
   </Container>
-       
-
-       
-        
-      
-      
- </>
+   </>
   )
 }
 
-export default page
+export default ShippingCheckout
