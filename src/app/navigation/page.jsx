@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import { Card, Container, Col, Row } from "react-bootstrap";
+import { Card} from "react-bootstrap";
 import dash from "@/assets/dash.svg";
 import history from "@/assets/history.png";
 import setting from "@/assets/setting.png";
@@ -29,7 +29,7 @@ const Navigation = () => {
                                 </div>
                                    </Link>
                               
-                                   <Link style={{color:'white'}} href="navigation/history">
+                                   <Link style={{color:'white'}} href="/navigation/history">
                                 <div className='d-flex mt-4'>
                                     <div >
                                         <Image src={history} width={0} height={0} sizes='100vw' alt='product' />
@@ -39,7 +39,7 @@ const Navigation = () => {
                                     </div>
                                 </div>
                                 </Link>
-                                <Link style={{color:'white'}} href="navigation/settings">
+                                <Link style={{color:'white'}} href="/navigation/settings">
 
                                 <div className='d-flex mt-4'>
                                     <div >

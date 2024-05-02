@@ -3,6 +3,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import Checkout from "./Checkout";
 import Shiping from "./Shiping";
 import OrderSummary from "./OrderSummary";
+import ShippingCheckout from "./ShippingCheckout";
+
 
 const page = () => {
   return (
@@ -12,6 +14,7 @@ const page = () => {
           <Col xs={12} lg={8}>
             <Checkout />
             <Shiping />
+           <ShippingCheckout/>
           </Col>
           <Col xs={12} lg={4}>
             <OrderSummary/>

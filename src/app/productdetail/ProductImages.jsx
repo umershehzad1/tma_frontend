@@ -8,7 +8,7 @@ import Image from "next/image";
 const ProductImage = () => {
   return (
     <>
-      <Image
+      <Image  className="d-none d-md-block "
         src={leaf}
         width={0}
         height={0}
@@ -17,8 +17,8 @@ const ProductImage = () => {
         alt="team"
       />
 
-      <Row className="mb-2">
-        <Col lg={6} className="pe-0">
+      <Row className="mb-2  ">
+        <Col lg={6} className="pe-0 d-none d-md-block">
           <Image
             src={img1}
             width={0}
@@ -28,7 +28,7 @@ const ProductImage = () => {
             alt="team"
           />
         </Col>
-        <Col lg={6} className="ps-0">
+        <Col lg={6} className="ps-0 d-none d-md-block ">
           <Image
             src={img2}
             width={0}
@@ -47,6 +47,7 @@ const ProductImage = () => {
         sizes="100vw"
         style={{ width: "100%", height: "auto", objectFit: "cover" }}
         alt="team"
+        className="d-none d-md-block "
       />
     </>
   );

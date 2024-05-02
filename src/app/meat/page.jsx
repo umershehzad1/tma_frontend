@@ -49,7 +49,7 @@ const page = () => {
       ];
     return (
         <>
-            <CategoryProductPage banner={meat1} title={"meat"} products={products}   />
+            <CategoryProductPage banner={meat1} title={"Meat"} products={products}   />
         </>
     )
 }

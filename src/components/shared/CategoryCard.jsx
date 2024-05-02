@@ -10,10 +10,10 @@ const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
       <Card
         className={` ${
           Even === 1
-            ? "even-card my-2 position-relative rounded-0"
+            ? "even-card my-2 position-relative rounded-0 category-product-card"
             : Even === 2
-            ? "odd-card my-2 position-relative rounded-0"
-            : "my-2 position-relative rounded-0"
+            ? "odd-card my-2 position-relative rounded-0 category-product-card"
+            : "my-2 position-relative rounded-0 category-product-card"
         }`}
       >
         {sale ? (
@@ -46,27 +46,27 @@ const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
        
         <Card.Body>
           <Row>
-            <Col xs={9}>
+            <Col xs={8}>
             <Link href='/productdetail'>
               <Card.Text className="m-0" style={{ cursor: "pointer" }}>
                 {title}
               </Card.Text>
               </Link>
-              <Card.Title className="fs-6">
+              <Card.Title className="fs-6 category-price">
                 N{price?.toFixed(2)}
                 <small className="text-muted text-decoration-line-through mx-2">
                   N{Oldprice?.toFixed(2)}
                 </small>
               </Card.Title>
             </Col>
-            <Col xs={3}>
+            <Col xs={4}>
               
               <Image
                 src={cart}
-                width={50}
-                height={50}
+                width={0}
+                height={0}
                 alt="Add to Cart"
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", width:"100%"  }}
               />
               
               
