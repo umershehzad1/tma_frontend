@@ -20,7 +20,7 @@ const CategoryProductPage = ({ banner, title, products }) => {
   
   return (
     <>
-      <Image className="pb-4" src={banner} style={{ width: "100%" }} />
+      <Image className="pb-4" src={banner} style={{ width: "100%",height:"auto" }} />
       <Container>
         <h2
           className="my-3"

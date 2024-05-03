@@ -35,7 +35,7 @@ const OrganicFood = () => {
             width={0}
             height={0}
             alt="team"
-            style={{ borderRadius: "8px", width: "100%" }}
+            style={{ borderRadius: "8px", width: "100%",height:"auto" }}
           />
         </Col>
       </Row>

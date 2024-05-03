@@ -7,6 +7,7 @@ import PhoneInput from 'react-phone-number-input'
 import { Form,InputGroup } from 'react-bootstrap'
 import { FiEye } from 'react-icons/fi'
 import { BsGoogle } from "react-icons/bs";
+import Link from 'next/link'
 
 const page = () => {
   const [value, setValue] = useState()
@@ -78,7 +79,7 @@ const page = () => {
 
     <div className='d-flex justify-content-center mt-4'>
         <p style={{color:"#666666",fontSize:"14px"}}>Already have account</p>
-        <p style={{color:"#1A1A1A", fontSize:"14px",paddingLeft:"5px"}}>Login</p>
+        <Link href={"/signin"} style={{ color: "#1A1A1A", fontSize: "14px" }}>Login</Link>
 
     </div>
    
