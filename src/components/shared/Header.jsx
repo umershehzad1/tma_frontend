@@ -48,9 +48,9 @@ function Header() {
       title: "Others",
       items: [
         { title: "Drinks", href: "/drink" },
-        { title: "Snacks & Sweets", href: "#" },
+        { title: "Snacks & Sweets", href: "/snackandsweet" },
         { title: "Canned Foods", href: "/cannedfood" },
-        { title: "Pasta & Noodles", href: "/pastanoodle" },
+        { title: "Pasta & Noodles", href: "/pastaandnoodle" },
         { title: "Cosmetics", href: "/cosmetic" },
       ],
     },
