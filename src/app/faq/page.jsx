@@ -65,8 +65,9 @@ const page = () => {
         <Col xs={12} lg={6}>
           <Image
             src={basket}
-            width={600}
-            height={654}
+            width={0}
+            height={0}
+            style={{width:"100%",height:"auto"}}
           />
         </Col>
       </Row>

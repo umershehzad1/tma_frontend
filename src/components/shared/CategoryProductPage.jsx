@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import filter from "@/assets/filter.svg";
 import smfilter from "@/assets/smfilter.png";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Filter from "@/components/shared/Filter";
@@ -16,6 +15,9 @@ const CategoryProductPage = ({ banner, title, products }) => {
   const handleCloseFilter = () => {
     setShowFilter(false);
   };
+
+
+  
   return (
     <>
       <Image className="pb-4" src={banner} style={{ width: "100%" }} />
@@ -34,32 +36,34 @@ const CategoryProductPage = ({ banner, title, products }) => {
 
         <Row>
           <Col xs={12} lg={3}>
-           
-          
-            <div className="d-none d-md-block "> <Filter/></div>
-       
+            <div className="d-none d-md-block ">
+              {" "}
+              <Filter />
+            </div>
           </Col>
           <Col xs={12} lg={9}>
-          <div className="d-flex justify-content-between">
-            <div className="d-block d-md-none">
-            <Button className="filter-btn "  onClick={handleFilterButtonClick}>
-          Filter
-          <Image
-            className="filter-image mx-2"
-            src={smfilter}
-            width={15}
-            height={14}
-            alt="team"
-           
-          />
-        </Button>
+            <div className="d-flex justify-content-between">
+              <div className="d-block d-md-none">
+                <Button
+                  className="filter-btn "
+                  onClick={handleFilterButtonClick}
+                >
+                  Filter
+                  <Image
+                    className="filter-image mx-2"
+                    src={smfilter}
+                    width={15}
+                    height={14}
+                    alt="team"
+                  />
+                </Button>
+              </div>
+              <div className="ms-auto pb-4 mt-3">
+                <b>{products.length} </b>
+                <span>Results Found</span>
+              </div>
             </div>
-            <div className="ml-auto pb-4 mt-3">
-        <b>{products.length} </b>
-        <span>Results Found</span>
-      </div>
-            </div>
-          
+
             <Row>
               {products.map((product, index) => (
                 <Col xs={6} lg={4}>
@@ -72,12 +76,11 @@ const CategoryProductPage = ({ banner, title, products }) => {
                   />
                 </Col>
               ))}
-              </Row>
-
+            </Row>
           </Col>
         </Row>
       </Container>
-      <FilterOverlay isOpen={showFilter} onClose={handleCloseFilter}/>
+      <FilterOverlay isOpen={showFilter} onClose={handleCloseFilter} />
     </>
   );
 };

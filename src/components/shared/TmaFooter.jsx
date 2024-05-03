@@ -10,7 +10,7 @@ import Mastercard from "@/assets/Mastercard.svg";
 import Payment from "@/assets/Payment.svg";
 import Subscribe from "./Subscribe";
 const TmaFooter = () => {
-    const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
   const footerlinks = [
     {
       title: "My Account",
@@ -52,7 +52,7 @@ const TmaFooter = () => {
 
   return (
     <>
-    <Subscribe/>
+      <Subscribe />
       <footer style={{ background: "#1A1A1A" }}>
         <Container className="pt-4">
           <Row className="py-4">
@@ -68,7 +68,7 @@ const TmaFooter = () => {
                     <Link
                       className="text-decoration-none text-white"
                       href="tel:123-456-7890"
-                      style={{fontSize:"14px"}}
+                      style={{ fontSize: "14px" }}
                     >
                       123-456-7890
                     </Link>
@@ -76,7 +76,7 @@ const TmaFooter = () => {
                     <Link
                       className="text-decoration-none text-white"
                       href="mailto:tmaglobal@gmail.com"
-                      style={{fontSize:"14px"}}
+                      style={{ fontSize: "14px" }}
                     >
                       tmaglobal@gmail.com
                     </Link>
