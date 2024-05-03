@@ -34,9 +34,9 @@ const TmaFooter = () => {
       title: "Proxy",
       links: [
         { text: "About", href: "/about" },
-        { text: "Shop", href: "#" },
-        { text: "Product", href: "/productdetail" },
-        { text: "Track Order", href: "#" },
+        { text: "Shop", href: "/" },
+        { text: "Product", href: "/meat" },
+        { text: "Track Order", href: "/navigation/history" },
       ],
     },
     {

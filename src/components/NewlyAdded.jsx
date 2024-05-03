@@ -62,7 +62,7 @@ const NewlyAdded = () => {
           <Col xs={12} lg={6}>
             <Row className="mt-lg-0 mt-2">
               {Object.keys(imageMap).map((category, index) => (
-                <Col key={index} xs={6}>
+                <Col key={index} xs={12} lg={6}>
                   <div
                     className=" d-flex justify-content-center align-items-center"
                     style={{

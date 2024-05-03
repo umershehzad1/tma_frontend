@@ -10,7 +10,6 @@ import Types from "@/components/Types";
 import LearnMore from "@/components/LearnMore";
 import Icons from "@/components/Icons";
 import Instagram from "@/components/Instagram";
-import Featured from "@/components/Featured";
 import Banner from "@/components/Banner";
 import Testomonials from "@/components/Testomonials";
 import FeaturedProduct from "@/components/FeaturedProduct";
@@ -22,7 +21,7 @@ const page = () => {
       <Perks />
       <CategoryHomeCard />
       <FeaturedProduct/>
-      {/* <Featured /> */}
+   
       <NewlyAdded />
 
       <RecentSearch />

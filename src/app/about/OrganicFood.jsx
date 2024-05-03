@@ -19,13 +19,9 @@ const OrganicFood = () => {
   return (
     <>
       <Row className="py-lg-5 py-2">
-        <Col xs={12} lg={6} className="pt-3 pt-lg-5 mt-3 mt-lg-5 about-heading" >
-          <h2  >
-            100% Trusted Organic Food Store
-          </h2>
-          <p
-           className="mt-3"
-          >
+        <Col xs={12} lg={6} className="pt-3 pt-lg-5 mt-3 mt-lg-5 about-heading">
+          <h2>100% Trusted Organic Food Store</h2>
+          <p className="mt-3">
             Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi,
             laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies elit.
             Proin ac lectus arcu. Maecenas aliquet vel tellus at accumsan. Donec
@@ -45,7 +41,6 @@ const OrganicFood = () => {
       </Row>
 
       <Row className="py-lg-5 py-2">
-       
         <Col xs={12} lg={6} className="d-none d-lg-block">
           <Image
             src={basket}
@@ -55,14 +50,12 @@ const OrganicFood = () => {
             style={{ borderRadius: "8px", width: "100%" }}
           />
         </Col>
-        <Col xs={12} lg={6} className="pt-3 pt-lg-5 about-heading" >
-          <h2  >
-            100% Trusted Organic Food Store
-          </h2>
-          <p
-           className="mt-3"
-          >
-           Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a mi. Nulla eu eros consequat tortor tincidunt feugiat.
+        <Col xs={12} lg={6} className="pt-3 pt-lg-5 about-heading">
+          <h2>100% Trusted Organic Food Store</h2>
+          <p className="mt-3">
+            Pellentesque a ante vulputate leo porttitor luctus sed eget eros.
+            Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a
+            mi. Nulla eu eros consequat tortor tincidunt feugiat.
           </p>
 
           <Row className="mt-3">
@@ -269,19 +262,18 @@ const OrganicFood = () => {
               </div>
             </Col>
           </Row>
-          
         </Col>
       </Row>
 
       <Row className="py-lg-5 py-2">
-        <Col xs={12} lg={6} className="pt-3 pt-lg-5 mt-3 mt-lg-5 about-heading d-none d-lg-block" >
-          <h2  >
-          We Delivered, You Enjoy Your Order.
-          </h2>
-          <p
-           className="mt-3"
-          >
-               Ut suscipit egestas suscipit. Sed posuere pellentesque nunc,
+        <Col
+          xs={12}
+          lg={6}
+          className="pt-3 pt-lg-5 mt-3 mt-lg-5 about-heading d-none d-lg-block"
+        >
+          <h2>We Delivered, You Enjoy Your Order.</h2>
+          <p className="mt-3">
+            Ut suscipit egestas suscipit. Sed posuere pellentesque nunc,
             ultrices consectetur velit dapibus eu. Mauris sollicitudin dignissim
             diam, ac mattis eros accumsan rhoncus. Curabitur auctor bibendum
             nunc eget elementum.
@@ -388,17 +380,6 @@ const OrganicFood = () => {
           />
         </Col>
       </Row>
-
-
-
-
-
-
-
-
-
-
-
     </>
   );
 };

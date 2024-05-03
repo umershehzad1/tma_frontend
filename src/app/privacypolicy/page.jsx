@@ -1,8 +1,12 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 const page = () => {
   return (
    <>
+   <Container className='pt-4'>
+
+ 
    <h1 style={{ fontSize: "36px", fontWeight: "600", color: "black" }}> Privacy Policy</h1>
    <p className='term-text mt-5'>
    What Does This Privacy Notice Cover?<br/>
@@ -159,7 +163,7 @@ TMC Global Corporate Privacy<br/>
 Bentonville, AR 72716-0160<br/>
 </p>
 
-
+</Container>
 
    </>
   )

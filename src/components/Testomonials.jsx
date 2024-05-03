@@ -55,7 +55,7 @@ const page = () => {
         <Row >
         {/* <Slider {...settings}> */}
             <Col lg= {4} >
-            <Card className='p-3' >
+            <Card className='p-3 my-2' >
             <Image
           src={Vector}
           width={40}
@@ -100,7 +100,7 @@ const page = () => {
         
         <Col lg= {4}>
         
-        <Card className='p-3' >
+        <Card className='p-3 my-2' >
         <Image
       src={Vector}
       width={40}
@@ -146,7 +146,7 @@ const page = () => {
         
         <Col lg= {4}>
         
-        <Card className='p-3' >
+        <Card className='p-3 my-2' >
         <Image
       src={Vector}
       width={40}

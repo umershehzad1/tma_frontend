@@ -9,7 +9,6 @@ import customer3 from "@/assets/customer3.png";
 import customer4 from "@/assets/customer4.png";
 
 const Team = () => {
-  // Define your team members
   const teamMembers = [
     { name: "Jenny Wison", position: "CEO & Founder", image: customer },
     { name: "Jenny Wison", position: "CEO & Founder", image: customer2 },

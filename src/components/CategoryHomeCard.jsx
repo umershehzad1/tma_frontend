@@ -1,5 +1,5 @@
-"use client";
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import ViewAllHeading from "./ViewAllHeading";
 import Image from "next/image";
@@ -11,80 +11,96 @@ import cat4 from "@/assets/cat4.png";
 import cat5 from "@/assets/cat5.png";
 import Link from "next/link";
 import downarrow from "@/assets/arrowdown.svg";
+import uparrow from "@/assets/uparrow.svg";
+
 const CategoryHomeCard = () => {
+  const [displayCount, setDisplayCount] = useState(6);
+  const [showAll, setShowAll] = useState(false);
+
   const categories = [
-    { name: "Meat", image: meat,link:"/meat" },
-    { name: "Fresh & Vegetables", image: cat1, link:"/vegetable" },
-    { name: "Fish & Seafoods ", image: cat2, link:"/fishandseafood" },
-    { name: "Grains & Flower", image: cat3, link:"/grainandflower" },
-    { name: "Breakfast Food", image: cat4, link:"/breakfast" },
-    { name: "Seasoning & Oil", image: cat5, link:"/seasoningandoil" },
+    { name: "Meat", image: meat, link: "/meat" },
+    { name: "Fresh & Vegetables", image: cat1, link: "/vegetable" },
+    { name: "Fish & Seafoods", image: cat2, link: "/fishandseafood" },
+    { name: "Grains & Flower", image: cat3, link: "/grainandflower" },
+    { name: "Breakfast Food", image: cat4, link: "/breakfast" },
+    { name: "Seasoning & Oil", image: cat5, link: "/seasoningandoil" },
+    { name: "Meat", image: meat, link: "/meat" },
+    { name: "Fresh & Vegetables", image: cat1, link: "/vegetable" },
+    { name: "Fish & Seafoods", image: cat2, link: "/fishandseafood" },
+    { name: "Grains & Flower", image: cat3, link: "/grainandflower" },
+    { name: "Breakfast Food", image: cat4, link: "/breakfast" },
+    { name: "Seasoning & Oil", image: cat5, link: "/seasoningandoil" },
   ];
+
+  const handleToggleView = () => {
+    setShowAll(!showAll);
+    setDisplayCount(showAll ? 6 : categories.length);
+  };
+
   return (
-    <>
-      <Container>
-        <ViewAllHeading title="Categories" viewAllLink="/categories" />
-        <Row>
-          {categories.map((category, index) => (
-            <Col xs={6} lg={2} key={index}>
-              <Card className="pt-2 my-2" as={Link} href={category?.link}>
-                <div
+    <Container>
+      <ViewAllHeading title="Categories" viewAllLink="/categories" />
+      <Row>
+        {categories.slice(0, displayCount).map((category, index) => (
+          <Col xs={6} lg={2} key={index}>
+            <Card className="pt-2 my-2" as={Link} href={category?.link}>
+              <div
+                style={{
+                  width: "80%",
+                  margin: "auto",
+                  height: "100px",
+                  overflow: "hidden",
+                }}
+                className="my-2"
+              >
+                <Image
+                  src={category.image}
+                  width={0}
+                  height={0}
+                  alt={category.name}
                   style={{
-                    width: "80%",
-                    margin: "auto",
-                    height: "100px",
-                    overflow: "hidden",
+                    objectFit: "contain",
+                    width: "100%",
+                    height: "100%",
                   }}
-                  className="my-2"
+                />
+              </div>
+              <Card.Body className="text-center">
+                <Card.Title
+                  className="fs-6"
+                  style={{ color: "rgba(0, 107, 163, 1)" }}
                 >
-                  <Image
-                    src={category.image}
-                    width={0}
-                    height={0}
-                    alt={category.name}
-                    style={{
-                      objectFit: "contain",
-                      width: "100%",
-                      height: "100%",
-                    }}
-                  />
-                </div>
-                <Card.Body className="text-center">
-                  <Card.Title
-                    className="fs-6"
-                    style={{ color: "rgba(0, 107, 163, 1)" }}
-                  >
-                    {category.name}
-                  </Card.Title>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-        <div className="text-end py-3 ">
-          <Link
-            href=""
-            className="text-decoration-none"
+                  {category.name}
+                </Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+      {categories.length > 6 && (
+        <div className="text-end py-3">
+          <button
+            onClick={handleToggleView}
+            className="text-decoration-none btn"
             style={{
               color: "rgba(0, 107, 163, 1)",
               fontSize: "16px",
               fontWeight: "500",
+              border: "none",
+              background: "none",
             }}
           >
-            <span className="mt-3">view More</span>
-            <span className="ms-2">
-              <Image src={downarrow} width={13} height={13} alt="shipping" />
+            <span className="mt-3">
+              {showAll ? "View Less" : "View More"}
             </span>
-          </Link>
+            <span className="ms-2">
+              <Image src={showAll ? uparrow : downarrow} width={13} height={13} alt="shipping" />
+            </span>
+          </button>
         </div>
-      </Container>
-    </>
+      )}
+    </Container>
   );
 };
 
 export default CategoryHomeCard;
-
-
-
-
-

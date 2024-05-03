@@ -15,7 +15,7 @@ const UserDetail = () => {
       <Card.Body>
         
       <Row>
-        <Col lg={4}>
+        <Col lg={4} className='text-center'>
         <Image
                 src={user}
                 width={174}

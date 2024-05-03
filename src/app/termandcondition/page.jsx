@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 const page = () => {
     return (
         <>
-            <Container>
+            <Container className='pt-3'>
                 <h1 style={{ fontSize: "36px", fontWeight: "600", color: "black" }}> Terms And Conditions</h1>
                 <p className='term-text'>
                     IMPORTANT: THESE TERMS OF USE CONTAIN A MANDATORY ARBITRATION PROVISION THAT, AS FURTHER SET FORTH IN SECTION 20 BELOW, REQUIRES THE USE OF ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES. THIS MEANS THAT YOU AND TMC Global ARE EACH GIVING UP THE RIGHT TO SUE EACH OTHER IN COURT OR IN CLASS ACTIONS OF ANY KIND. IN ARBITRATION, THERE IS NO JUDGE OR JURY AND THERE IS LESS DISCOVERY AND APPELLATE REVIEW THAN IN COURT

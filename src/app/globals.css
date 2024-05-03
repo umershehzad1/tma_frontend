@@ -177,6 +177,14 @@ footer ul li a:hover {
   .hero button {
     width: 100%;
   }
+  .slick-next{
+    right: 10px !important;
+  }
+  .slick-prev{
+    left: 10px !important;
+    z-index: 999 !important;
+  }
+
   .top-selling-items {
     width: 100%;
   }
@@ -187,6 +195,20 @@ footer ul li a:hover {
   .icons {
     border: none !important;
   }
+  .talk h1 {
+    font-size: 30px !important;
+  }
+  
+}
+.talk h1 {
+  font-size: 48px ;
+
+
+    color: #1A1A1A;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 57.6px;
+    margin-top: 1.5rem;
 }
 
 /* .filter-btn {
@@ -708,6 +730,9 @@ footer ul li a:hover {
   background-color: #f2f2f2 !important;
   padding-left: 1rem !important;
 }
+.fqa .accordion-button {
+  padding-left: 1rem !important;
+}
 /* .fqa .accordion-button{
   border: 1px solid black;
 } */
@@ -773,25 +798,32 @@ a {
   .about-heading h2 {
     font-size: 32px !important;
   }
-  
+
   .about-heading p {
-      font-size: 14px !important;
-    
-   
+    font-size: 14px !important;
   }
 }
 
 .about-heading h2 {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-weight: 600;
   font-size: 56px;
 }
 
 .about-heading p {
-
-    color: #666666;
-    font-weight: 400;
-    font-size: 18px ;
-  
- 
+  color: #666666;
+  font-weight: 400;
+  font-size: 18px;
 }
+
+.shopping-table{
+  overflow: auto;
+}
+.react-stars{
+  display: flex !important;
+}
+.hero button:hover{
+  background-color: white !important;
+  color: #00283d !important;
+}
+

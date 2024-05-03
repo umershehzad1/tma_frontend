@@ -11,7 +11,7 @@ import { BsGoogle } from "react-icons/bs";
 const page = () => {
   const [value, setValue] = useState()
   return (
-    <Container style={{paddingBottom:"60px", }}>
+    <Container className='py-5' >
 
     <Row>
         <Col lg = {5} className='mx-auto  px-auto' style={{}}>

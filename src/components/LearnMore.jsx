@@ -9,10 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const LearnMore = () => {
-  //   const vidRef = useRef(null);
-  //   const handlePlayVideo = () => {
-  //     vidRef.current.play();
-  //   };
+
 
   const learnmore = [
     {
@@ -47,7 +44,26 @@ const LearnMore = () => {
     autoplay: false,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    controls:true
+    controls:false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+     
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
 };
 
   return (
