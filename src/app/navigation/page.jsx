@@ -10,6 +10,7 @@ import log from "@/assets/log.png";
 import Dashboard from "./dashboard/page";
 import Settings from "./settings/page";
 import History from "./history/page";
+import "./navigation.css"
 
 const Navigation = () => {
     return (

@@ -1,0 +1,43 @@
+@media only screen and (max-width: 768px) {
+    .talk h1 {
+        font-size: 30px !important;
+      }
+}
+.talk h1 {
+  font-size: 48px;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57.6px;
+  margin-top: 1.5rem;
+}
+
+.fqa .accordion-button.collapsed {
+  border-top-left-radius: var(--bs-accordion-inner-border-radius);
+  border-top-right-radius: var(--bs-accordion-inner-border-radius);
+  background-color: #f2f2f2 !important;
+  padding-left: 1rem !important;
+}
+.fqa .accordion-button {
+  padding-left: 1rem !important;
+}
+.fqa .accordion-button{
+  border: 1px solid black;
+}
+
+.fqa .accordion-button:not(.collapsed)::after {
+    background-image: url("../../assets/minus.png") !important;
+  }
+  .fqa .accordion-button::after {
+    background-image: url("../../assets/plus.png");
+  }
+  .accord-header {
+  color: #00283d;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.body-accord {
+  border: 1px solid #00283d;
+}

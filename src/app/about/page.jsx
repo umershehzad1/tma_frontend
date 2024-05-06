@@ -3,8 +3,8 @@ import React from "react";
 
 import { Container} from "react-bootstrap";
 
-import OrganicFood from "./OrganicFood";
-import Team from "./Team";
+import OrganicFood from "@/components/about/organicfood/OrganicFood";
+import Team from "@/components/about/team/Team";
 
 const page = () => {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Checkout from "./Checkout";
-import Shiping from "./Shiping";
-import OrderSummary from "./OrderSummary";
-import ShippingCheckout from "./ShippingCheckout";
+import Checkout from "@/components/billinginfo/checkout/Checkout";
+import Shiping from "@/components/billinginfo/shipping/Shipping";
+import OrderSummary from "@/components/billinginfo/ordersummary/OrderSummary";
+import ShippingCheckout from "@/components/billinginfo/shippingcheckout/ShippingCheckout";
 
 
 const page = () => {

@@ -1,0 +1,29 @@
+
+.about-heading h2 {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 56px;
+}
+
+.about-heading p {
+  color: #666666;
+  font-weight: 400;
+  font-size: 18px;
+}
+.organic {
+    display: flex;
+  }
+.add-to-cart-button {
+    border-radius: 5px;
+    padding: 12px 40px;
+    background-color: #00283d !important;
+  }
+@media only screen and (max-width: 768px) {
+    .about-heading h2 {
+        font-size: 32px !important;
+      }
+    
+      .about-heading p {
+        font-size: 14px !important;
+      }
+}

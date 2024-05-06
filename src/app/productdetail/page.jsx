@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import ProductImage from "./ProductImages";
-import ProductDetail from "./ProductDetail";
+import ProductImage from "@/components/productdetail/productimage/ProductImages";
+import ProductDetail from "@/components/productdetail/detail/ProductDetail";
 import RelatedProduct from "@/components/shared/relatedproduct/RelatedProduct";
 const page = () => {
   return (

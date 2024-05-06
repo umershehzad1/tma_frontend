@@ -1,0 +1,11 @@
+.order-no-button {
+    border-radius: 5px;
+    padding: 8px 50px;
+    background-color: #e3e3e3 !important;
+    color: black;
+  }
+  .order-yes-button {
+    border-radius: 5px;
+    padding: 8px 50px;
+    background-color: #ff4244 !important;
+  }

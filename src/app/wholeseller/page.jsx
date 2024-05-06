@@ -8,7 +8,7 @@ import TopSelling from '@/components/topselling/TopSelling'
 import RecentSearch from '@/components/recentsearch/RecentSearch';
 import Icons from '@/components/icon/Icons';
 import Instagram from '@/components/instagram/Instagram';
-import NewProducts from './NewProducts';
+import NewProducts from '@/components/newproduct/NewProducts';
 
 
 const page = () => {

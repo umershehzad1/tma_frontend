@@ -1,0 +1,17 @@
+.number .PhoneInputCountry {
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    margin-right: var(--PhoneInputCountrySelect-marginRight);
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+  .number .PhoneInputInput {
+    flex: 1 1;
+    min-width: 0;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    padding: 14px 16px;
+  }

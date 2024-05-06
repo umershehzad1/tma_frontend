@@ -1,16 +1,17 @@
 "use client"
 import React from 'react'
 import { Col, Container, Row } from "react-bootstrap";
-import OrderDetail from './OrderDetail';
+import OrderDetail from '@/components/orderdetail/OrderDetail';
 import Navigation from "../page";
+import "./history.css"
 
 const History = () => {
   return (
    <>
    <Container>
     <Row>
-    <Col xs={12} lg={3}>
-    {/* <Navigation/> */}
+    <Col xs={12} lg={3} className='mt-5'>
+    <Navigation/>
         </Col>
         
         <Col xs={12} lg={9}>

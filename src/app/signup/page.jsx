@@ -8,6 +8,7 @@ import { Form,InputGroup } from 'react-bootstrap'
 import { FiEye } from 'react-icons/fi'
 import { BsGoogle } from "react-icons/bs";
 import Link from 'next/link'
+import "./signup.css"
 
 const page = () => {
   const [value, setValue] = useState()

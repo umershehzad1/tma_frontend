@@ -1,0 +1,33 @@
+.size {
+    background: transparent;
+    background-color: white;
+  
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+  }
+  .btn-inc {
+  background: transparent;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  padding: 4px 12px;
+}
+.btn-dec {
+  background: transparent;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  padding: 4px 12px;
+} 
+.inc-dec {
+  border: solid 1px #e6e6e6;
+  border-radius: 5px;
+  width: 124px;
+  height: 50px;
+}
+.close-btn {
+    background-color: white !important;
+  }

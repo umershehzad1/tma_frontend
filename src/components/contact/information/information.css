@@ -1,0 +1,29 @@
+.fqa .accordion-button.collapsed {
+    border-top-left-radius: var(--bs-accordion-inner-border-radius);
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
+    background-color: #f2f2f2 !important;
+    padding-left: 1rem !important;
+  }
+  .fqa .accordion-button {
+    padding-left: 1rem !important;
+  }
+  /* .fqa .accordion-button{
+    border: 1px solid black;
+  } */
+  
+  .fqa .accordion-button:not(.collapsed)::after {
+    background-image: url("./../../../assets/minus.png") !important;
+  }
+  .fqa .accordion-button::after {
+    background-image: url("./../../../assets/plus.png") !important;
+  }
+  .accord-header {
+    color: #00283d;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .body-accord {
+    border: 1px solid #00283d;
+  }

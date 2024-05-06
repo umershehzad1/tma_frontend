@@ -5,6 +5,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import basket from "@/assets/basket.png";
 import Accordion from "react-bootstrap/Accordion";
 import veg from "@/assets/veg.png";
+import "./faq.css"
 const Faqs = ({show}) => {
   return (
     <>

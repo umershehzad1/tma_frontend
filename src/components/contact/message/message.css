@@ -1,0 +1,51 @@
+.contact {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 8px;
+  }
+  .bill-form .form-label {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 21px !important;
+    text-align: left;
+    color: #1a1a1a !important;
+  }
+  .bill-form .form-control::placeholder {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #999999 !important;
+    border-color: #e6e6e6 !important;
+  }
+  
+  .bill-form .form-select-lg {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #999999 !important;
+    border-color: #e6e6e6 !important;
+  }
+  .bill-form .form-control:focus {
+    color: none !important;
+    background-color: none !important ;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+  }
+  .bill-form .form-select:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none !important;
+  } 
+  
+  .addres .form-check-label {
+    
+      font-size: 14px !important;
+      font-weight: 400 !important;
+      line-height: 21px !important;
+      text-align: left;
+      color: #1A1A1A !important;
+      
+    }
+    .add-to-cart-button {
+        border-radius: 5px;
+        padding: 12px 40px;
+        background-color: #00283d !important;
+      }

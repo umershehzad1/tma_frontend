@@ -9,6 +9,7 @@ import { FiEye } from "react-icons/fi";
 import Card from "react-bootstrap/Card";
 import { BsGoogle } from "react-icons/bs";
 import Link from "next/link";
+import "./signin.css"
 const page = () => {
   return (
     <Container style={{ paddingBottom: "60px" }}>

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import can from "@/assets/can.png";
+import allproduct from "@/assets/allproduct.png";
 import productimg from "@/assets/image.png";
 import CategoryProductPage from "@/components/shared/categoryproductpage/CategoryProductPage";
 import "./allproducts.css"
@@ -51,7 +51,7 @@ const page = () => {
       ];
   return (
    <>
-   <CategoryProductPage banner={can} title={"Canned Foods"} products={products}   />
+   <CategoryProductPage banner={allproduct} title={"Canned Foods"} products={products}   />
    </>
   )
 }

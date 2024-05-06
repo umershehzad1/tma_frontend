@@ -1,0 +1,11 @@
+.text-gray {
+    color: #808080;
+  } 
+  .text-black {
+    color: black;
+  }
+  .add-to-cart-button {
+    border-radius: 5px;
+    padding: 12px 40px;
+    background-color: #00283d !important;
+  }

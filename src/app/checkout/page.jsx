@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from "react-bootstrap";
-import ShoppingCart from './ShoppingCart';
-import CartTotal from './CartTotal';
+import ShoppingCart from '@/components/checkout/shoppingcart/ShoppingCart';
+import CartTotal from '@/components/checkout/carttotal/CartTotal';
 
 const page = () => {
   return (

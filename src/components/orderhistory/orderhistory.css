@@ -1,0 +1,16 @@
+.orderhistory {
+    display: flex;
+    justify-content: space-between;
+  }
+  .shopping-table {
+    overflow: auto;
+  }
+  .dash-button {
+    border-radius: 5px;
+    padding: 16px 40px;
+    background-color: #00283d !important;
+  }
+  .view-btn {
+    display: flex;
+    justify-content: end;
+  }

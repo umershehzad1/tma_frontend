@@ -2,9 +2,9 @@
 import Image from "next/image";
 import React from "react";
 import { Card, Container, Col, Row } from "react-bootstrap";
-import OrderHistory from "./OrderHistory";
+import OrderHistory from "@/components/orderhistory/OrderHistory";
 
-import UserDetail from "./UserDetail";
+import UserDetail from "@/components/userdetail/UserDetail";
 import Navigation from "../page";
 
 const Dashboard = () => {

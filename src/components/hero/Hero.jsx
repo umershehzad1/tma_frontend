@@ -49,7 +49,8 @@ const Hero = () => {
             </div>
          
           </Col>
-        </Row></Col>
+        </Row>
+        </Col>
         
         </Container>
       
