@@ -1,18 +1,18 @@
 import React from "react";
-import CategoryHomeCard from "@/components/CategoryHomeCard";
-import Hero from "@/components/Hero";
-import LimitedStock from "@/components/LimitedStock";
-import NewlyAdded from "@/components/NewlyAdded";
-import Perks from "@/components/Perks";
-import RecentSearch from "@/components/RecentSearch";
-import TopSelling from "@/components/TopSelling";
-import Types from "@/components/Types";
-import LearnMore from "@/components/LearnMore";
-import Icons from "@/components/Icons";
-import Instagram from "@/components/Instagram";
-import Banner from "@/components/Banner";
-import Testomonials from "@/components/Testomonials";
-import FeaturedProduct from "@/components/FeaturedProduct";
+import CategoryHomeCard from "@/components/categoryhomecard/CategoryHomeCard";
+import Hero from "@/components/hero/Hero";
+import LimitedStock from "@/components/limitedstock/LimitedStock";
+import NewlyAdded from "@/components/newlyadded/NewlyAdded";
+import Perks from "@/components/perks/Perks";
+import RecentSearch from "@/components/recentsearch/RecentSearch";
+import TopSelling from "@/components/topselling/TopSelling";
+import Types from "@/components/types/Types";
+import LearnMore from "@/components/learnmore/LearnMore";
+import Icons from "@/components/icon/Icons";
+import Instagram from "@/components/instagram/Instagram";
+import Banner from "@/components/banner/Banner";
+import Testomonials from "@/components/testomonials/Testomonials";
+import FeaturedProduct from "@/components/featuredproduct/FeaturedProduct";
 const page = () => {
   return (
     <>

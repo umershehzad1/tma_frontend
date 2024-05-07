@@ -2,7 +2,8 @@
 import React from "react";
 import veg from "@/assets/veg.png";
 import productimg from "@/assets/image.png";
-import CategoryProductPage from "@/components/shared/CategoryProductPage";
+import CategoryProductPage from "@/components/shared/categoryproductpage/CategoryProductPage";
+import "./vegetable.css"
 
 const page = () => {
     const products = [

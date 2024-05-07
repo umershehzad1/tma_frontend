@@ -1,8 +1,8 @@
 import { Poppins } from "next/font/google";
-import "./globals.css";
+// import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "@/components/shared/Header";
-import TmaFooter from "@/components/shared/TmaFooter";
+import Header from "@/components/shared/header/Header";
+import TmaFooter from "@/components/shared/footer/TmaFooter";
 
 
 export const rock = Poppins({

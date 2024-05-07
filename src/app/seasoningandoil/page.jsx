@@ -2,7 +2,8 @@
 import React from "react";
 import oil from "@/assets/oil.png";
 import productimg from "@/assets/image.png";
-import CategoryProductPage from "@/components/shared/CategoryProductPage";
+import CategoryProductPage from "@/components/shared/categoryproductpage/CategoryProductPage";
+import "./seasoningandoil.css"
 
 const page = () => {
     const products = [

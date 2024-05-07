@@ -2,7 +2,8 @@
 import React from "react";
 import breakfast from "@/assets/breakfast.png";
 import productimg from "@/assets/image.png";
-import CategoryProductPage from "@/components/shared/CategoryProductPage";
+import CategoryProductPage from "@/components/shared/categoryproductpage/CategoryProductPage";
+import "./breakfast.css"
 
 const page = () => {
     const products = [

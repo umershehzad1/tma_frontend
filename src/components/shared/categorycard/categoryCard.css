@@ -1,0 +1,17 @@
+.odd-card {
+  border-right: 0 !important;
+  border-left: 0 !important;
+}
+@media only screen and (max-width: 768px) {
+  .category-product-card .card-text {
+    font-size: 12px !important;
+  
+  }
+  .category-product-card .category-price {
+    font-size: 12px !important;
+  }
+  .odd-card {
+    border-right: 1px solid #d2d2d2 !important;
+    border-left: 1px solid #d2d2d2 !important;
+  }
+}

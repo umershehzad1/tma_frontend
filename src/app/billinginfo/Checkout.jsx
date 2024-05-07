@@ -11,7 +11,7 @@ const Checkout = () => {
             Billing Information
           </h1>
           <Row>
-            <Col  lg={6}>
+            <Col lg={6}>
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlInput1"
@@ -24,7 +24,7 @@ const Checkout = () => {
                 />
               </Form.Group>
             </Col>
-            <Col  lg={6}>
+            <Col lg={6}>
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlInput1"
@@ -38,15 +38,15 @@ const Checkout = () => {
               </Form.Group>
             </Col>
           </Row>
-          <Col  lg={12}>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>Email</Form.Label>
-            <Form.Control size="lg" type="email" placeholder="Email" />
-          </Form.Group>
+          <Col lg={12}>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Email</Form.Label>
+              <Form.Control size="lg" type="email" placeholder="Email" />
+            </Form.Group>
           </Col>
-         
+
           <Row>
-            <Col  lg={6}>
+            <Col lg={6}>
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlInput1"

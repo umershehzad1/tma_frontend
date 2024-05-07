@@ -2,7 +2,8 @@
 import React from "react";
 import meat1 from "@/assets/meat1.png";
 import productimg from "@/assets/image.png";
-import CategoryProductPage from "@/components/shared/CategoryProductPage";
+import CategoryProductPage from "@/components/shared/categoryproductpage/CategoryProductPage";
+import "./snackandsweet.css"
 const page = () => {
     const products = [
         {

@@ -1,0 +1,10 @@
+.odd-card {
+    border-right: 0 !important;
+    border-left: 0 !important;
+  } 
+  .featured-btn {
+    padding: 14px 32px 14px 32px !important;
+    border-radius: 5px !important;
+    background: rgba(0, 107, 163, 1) !important;
+    border: none !important;
+  }

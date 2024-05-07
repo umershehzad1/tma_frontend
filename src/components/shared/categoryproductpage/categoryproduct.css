@@ -1,0 +1,11 @@
+.filter-btn {
+  background-color: white !important;
+  border: 1px solid #999999 !important;
+  border-radius: 43px !important;
+  color: #999999 !important;
+  padding: 10px 20px !important;
+}
+
+.filter-image {
+  margin-left: 0.5rem;
+}

@@ -9,7 +9,7 @@ import Heart from "@react-sandbox/heart";
 import { Badge, Carousel, Col, Row } from "react-bootstrap";
 import group from "@/assets/Group.png";
 import cart from "@/assets/whitecart.svg";
-import CartOverlay from "@/components/CartOverlay";
+import CartOverlay from "@/components/cartoverlay/CartOverlay";
 import SubscribeModal from "./SubscribeModal";
 import leaf from "@/assets/leaf.png";
 import img1 from "@/assets/img1.png";

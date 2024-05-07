@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ProductImage from "./ProductImages";
 import ProductDetail from "./ProductDetail";
-import RelatedProduct from "@/components/shared/RelatedProduct";
+import RelatedProduct from "@/components/shared/relatedproduct/RelatedProduct";
 const page = () => {
   return (
     <>

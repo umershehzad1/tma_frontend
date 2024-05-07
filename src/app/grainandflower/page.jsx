@@ -2,7 +2,8 @@
 import React from "react";
 import grain from "@/assets/grain.png";
 import productimg from "@/assets/image.png";
-import CategoryProductPage from "@/components/shared/CategoryProductPage";
+import CategoryProductPage from "@/components/shared/categoryproductpage/CategoryProductPage";
+import "./grainandflower.css"
 
 const page = () => {
     const products = [

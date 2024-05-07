@@ -1,13 +1,13 @@
 import React from 'react'
 import { Col, Container, Row } from "react-bootstrap";
-import CategoryHomeCard from '@/components/CategoryHomeCard'
-import Hero from '@/components/Hero'
-import Banner from '@/components/Banner'
-import Perks from '@/components/Perks'
-import TopSelling from '@/components/TopSelling'
-import RecentSearch from '@/components/RecentSearch';
-import Icons from '@/components/Icons';
-import Instagram from '@/components/Instagram';
+import CategoryHomeCard from '@/components/categoryhomecard/CategoryHomeCard'
+import Hero from '@/components/hero/Hero'
+import Banner from '@/components/banner/Banner'
+import Perks from '@/components/perks/Perks'
+import TopSelling from '@/components/topselling/TopSelling'
+import RecentSearch from '@/components/recentsearch/RecentSearch';
+import Icons from '@/components/icon/Icons';
+import Instagram from '@/components/instagram/Instagram';
 import NewProducts from './NewProducts';
 
 

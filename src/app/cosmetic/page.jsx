@@ -2,7 +2,8 @@
 import React from "react";
 import cosmetic from "@/assets/cosmetic.png";
 import productimg from "@/assets/image.png";
-import CategoryProductPage from "@/components/shared/CategoryProductPage";
+import CategoryProductPage from "@/components/shared/categoryproductpage/CategoryProductPage";
+import "./cosmetic.css"
 
 const page = () => {
     const products = [

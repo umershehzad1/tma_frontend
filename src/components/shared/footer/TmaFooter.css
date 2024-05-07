@@ -1,0 +1,25 @@
+.footer-links-color {
+    color: #999999;
+  }
+  footer h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+  }
+  footer p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  footer ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  footer ul li a:hover {
+    color: white;
+  }
+
+  
+

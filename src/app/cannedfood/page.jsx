@@ -2,7 +2,8 @@
 import React from "react";
 import can from "@/assets/can.png";
 import productimg from "@/assets/image.png";
-import CategoryProductPage from "@/components/shared/CategoryProductPage";
+import CategoryProductPage from "@/components/shared/categoryproductpage/CategoryProductPage";
+import "./cannedfood.css"
 
 const page = () => {
     const products = [
