@@ -10,22 +10,34 @@ import person3 from "@/assets/person3.png"
 import arrowcircle  from "@/assets/arrowcircle.svg"
 import arrowcircle1  from "@/assets/arrowcircle1.svg"
 import "./Testomonials.css"
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const page = () => {
-//   var settings = {
-//     // dots: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     // autoplay: true,
-//     // autoplaySpeed: 2000,
-//     // cssEase: "linear"
-// };
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+     
+    ]
+  };
   return (
     <div className='py-5' style={{background:"#F2F2F2"}}>
       <Container  >
+        <div className='  d-none d-md-block'>
         <div className='test' >
           <div><h1 style={{color:"#1A1A1A"}}>Client Testomonials</h1></div>
         
@@ -52,10 +64,12 @@ const page = () => {
        
 
         </div>
+        </div>
+       
        
         <Row >
-        {/* <Slider {...settings}> */}
-            <Col lg= {4} >
+        <Slider {...settings}>
+            <Col xs={12} lg= {4} >
             <Card className='p-3 my-2' >
             <Image
           src={Vector}
@@ -99,7 +113,7 @@ const page = () => {
 
         </Col>
         
-        <Col lg= {4}>
+        <Col xs={12} lg= {4}>
         
         <Card className='p-3 my-2' >
         <Image
@@ -145,7 +159,7 @@ const page = () => {
         
         </Col>
         
-        <Col lg= {4}>
+        <Col xs={12} lg= {4}>
         
         <Card className='p-3 my-2' >
         <Image
@@ -189,7 +203,7 @@ const page = () => {
 </Card>
 
         </Col>
-        {/* </Slider> */}
+        </Slider>
     </Row>  
   </Container>  
 </div>

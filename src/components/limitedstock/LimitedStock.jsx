@@ -49,7 +49,7 @@ const LimitedStock = () => {
 
   return (
     <>
-      <Container>
+      <Container className="d-none d-md-block">
         <ViewAllHeading
           title="Limited Stock Items"
           viewAllLink="/"

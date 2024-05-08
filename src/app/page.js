@@ -13,6 +13,8 @@ import Instagram from "@/components/instagram/Instagram";
 import Banner from "@/components/banner/Banner";
 import Testomonials from "@/components/testomonials/Testomonials";
 import FeaturedProduct from "@/components/featuredproduct/FeaturedProduct";
+import HomeMobileCategroy from "@/components/homemobilecard/HomeMobileCategroy";
+import NewlyAddedMobile from "@/components/newaddedmobile/NewlyAddedMobile";
 const page = () => {
   return (
     <>
@@ -20,9 +22,11 @@ const page = () => {
       <Hero />
       <Perks />
       <CategoryHomeCard />
+      
       <FeaturedProduct/>
    
       <NewlyAdded />
+      <NewlyAddedMobile/>
 
       <RecentSearch />
       <LearnMore />

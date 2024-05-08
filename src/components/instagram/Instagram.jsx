@@ -41,7 +41,7 @@ const Instagram = () => {
     ]
   return (
     <>
-      <Container>
+      <Container className="d-none d-md-block">
         <Row className="my-5 text-center">
           <div>
             <h3>

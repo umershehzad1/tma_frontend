@@ -23,7 +23,7 @@ const FeaturedProduct = () => {
           <ViewAllHeading title="Featured Products" viewAllLink="/" />
 
           <Row>
-            <Col xs={12} lg={4} className="p-0  d-none d-md-block ">
+            <Col xs={12} lg={4} className="p-0  ">
               <Featured />
             </Col>
             <Col xs={12} lg={8}>

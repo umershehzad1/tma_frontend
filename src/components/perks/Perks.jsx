@@ -47,9 +47,9 @@ const Perks = () => {
                     
                   />
                 </div>
-                <div className="ms-3">
-                  <b className="fs-6">{perk.title}</b>
-                  <p className="text-muted" style={{ fontSize: "12px" }}>
+                <div className="ms-3 ">
+                  <b className="lag-perk perk-title  ">{perk.title}</b>
+                  <p className="text-muted par-perk" style={{ fontSize: "12px" }}>
                     {perk.description}
                   </p>
                 </div>

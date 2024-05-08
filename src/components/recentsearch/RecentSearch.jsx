@@ -49,7 +49,7 @@ const RecentSearch = () => {
 
   return (
     <>
-      <Container>
+      <Container className="d-none d-md-block">
         <ViewAllHeading
           title="Your Recent Search"
           viewAllLink="/"

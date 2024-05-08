@@ -13,6 +13,7 @@ import Link from "next/link";
 import downarrow from "@/assets/arrowdown.svg";
 import uparrow from "@/assets/uparrow.svg";
 import "./CategoryHomeCard.css"
+import HomeMobileCategroy from "../homemobilecard/HomeMobileCategroy";
 
 const CategoryHomeCard = () => {
   const [displayCount, setDisplayCount] = useState(6);
@@ -39,7 +40,8 @@ const CategoryHomeCard = () => {
   };
 
   return (
-    <Container>
+    <>
+    <Container className="d-none d-md-block">
       <ViewAllHeading title="Categories" viewAllLink="/categories" />
       <Row>
         {categories.slice(0, displayCount).map((category, index) => (
@@ -104,6 +106,10 @@ const CategoryHomeCard = () => {
         </div>
       )}
     </Container>
+    <div className="d-block d-md-none"> <HomeMobileCategroy  categories={categories}/></div>
+    
+    </>
+    
   );
 };
 

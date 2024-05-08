@@ -11,6 +11,7 @@ import showmore from "@/assets/showmore.svg";
 import Image from "next/image";
 import Link from "next/link";
 import "./NewlyAdded.css"
+import NewlyAddedMobile from "../newaddedmobile/NewlyAddedMobile";
 const imageMap = {
   Vegetables: { image: vegetable, link: "/vegetable" },
   Meat: { image: Meat, link: "/meat" },
@@ -22,7 +23,7 @@ const NewlyAdded = () => {
   return (
     <>
 
-      <Container>
+      <Container className="d-none d-md-block" >
         <ViewAllHeading
           title="Newly Added Products"
           viewAllLink="/categories"
@@ -98,6 +99,7 @@ const NewlyAdded = () => {
           </Col>
         </Row>
       </Container>
+     
     </>
   );
 };

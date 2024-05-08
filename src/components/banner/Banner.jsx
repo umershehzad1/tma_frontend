@@ -7,7 +7,7 @@ import "./Banner.css"
 const page = () => {
 
     return (
-        <Container>
+        <Container className='d-none d-md-block'>
             <div className='background'>
                 <Container style={{ paddingBottom: "50px" }}>
                     <Row>

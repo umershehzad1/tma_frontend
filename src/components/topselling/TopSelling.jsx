@@ -48,7 +48,7 @@ const TopSelling = () => {
   ];
   return (
     <>
-       <Container>
+       <Container className="d-none d-md-block">
         <ViewAllHeading
           title="Top Selling Products"
           viewAllLink="/"

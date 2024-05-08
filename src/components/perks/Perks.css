@@ -1,5 +1,18 @@
 @media only screen and (max-width: 768px) {
     .perk{
         text-align: center;
+        margin: auto;
     }
+   .perk-title{
+    font-size: 10px !important;
+   }
+}
+.lag-perk {
+    font-size: 12px;
+    font-weight: 600;
+}
+.par-perk{
+    font-size: 10px;
+    font-weight: 400;
+    color: #999999;
 }

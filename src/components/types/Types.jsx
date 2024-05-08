@@ -29,7 +29,7 @@ const Types = () => {
               
             </div>
           </Col>
-          <Col xs={12} lg={3}>
+          <Col xs={4} lg={3}>
             <div className="my-2">
               <Image
                 src={firsttype}
@@ -39,7 +39,7 @@ const Types = () => {
               />
             </div>
           </Col>
-          <Col xs={12} lg={3}>
+          <Col xs={4} lg={3}>
             <div className="my-2">
               <Image
                 src={firsttype}
@@ -49,7 +49,7 @@ const Types = () => {
               />
             </div>
           </Col>
-          <Col xs={12} lg={3}>
+          <Col xs={4} lg={3}>
             <div className="my-2">
               <Image
                 src={firsttype}
@@ -103,3 +103,6 @@ const Types = () => {
 };
 
 export default Types;
+
+
+
