@@ -5,7 +5,7 @@ import shippingImage from "@/assets/shipping.svg";
 import support from "@/assets/support.svg";
 import secure from "@/assets/secure.svg";
 import moneyback from "@/assets/money-back.svg";
-import "./perks.css"
+import "./Perks.css"
 const perksData = [
   {
     image: shippingImage,
@@ -37,7 +37,7 @@ const Perks = () => {
           {perksData.map((perk, index) => (
             <Col key={index} xs={6} lg={3} className="my-2">
               <div className="d-lg-flex sm-d-block perk text-lg-left ">
-                <div className="mt-1 mx-sm-auto" style={{ width: "40px", height: "40px" }}>
+                <div className="mt-1  perk" style={{ width: "40px", height: "40px" }}>
                   <Image 
                     src={perk.image}
                     width={40}

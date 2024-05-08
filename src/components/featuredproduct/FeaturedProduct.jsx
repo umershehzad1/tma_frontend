@@ -23,12 +23,12 @@ const FeaturedProduct = () => {
           <ViewAllHeading title="Featured Products" viewAllLink="/" />
 
           <Row>
-            <Col xs={12} lg={4} className="p-0">
+            <Col xs={12} lg={4} className="p-0  d-none d-md-block ">
               <Featured />
             </Col>
             <Col xs={12} lg={8}>
               <Row className="p-0">
-                <Col lg={4} className="p-0">
+                <Col xs={6} lg={4} className="p-0">
                   <FeaturedCard
                     title="Red Chilli"
                     productImage={image}
@@ -37,7 +37,7 @@ const FeaturedProduct = () => {
                   />
                 </Col>
 
-                <Col lg={4} className="p-0">
+                <Col xs={6} lg={4} className="p-0">
                   <FeaturedCard
                     title="Red Chilli"
                     productImage={image}
@@ -46,7 +46,7 @@ const FeaturedProduct = () => {
                   />
                 </Col>
 
-                <Col lg={4} className="p-0">
+                <Col xs={6} lg={4} className="p-0">
                   <FeaturedCard
                     title="Red Chilli"
                     productImage={image}
@@ -56,7 +56,7 @@ const FeaturedProduct = () => {
                 </Col>
               </Row>
               <Row className="p-0">
-                <Col lg={4} className="p-0">
+                <Col xs={6} lg={4} className="p-0">
                   <FeaturedCard
                     title="Red Chilli"
                     productImage={image}
@@ -65,7 +65,7 @@ const FeaturedProduct = () => {
                   />
                 </Col>
 
-                <Col lg={4} className="p-0">
+                <Col xs={6} lg={4} className="p-0">
                   <FeaturedCard
                     sale="50"
                     title="Red Chilli"
@@ -75,7 +75,7 @@ const FeaturedProduct = () => {
                   />
                 </Col>
 
-                <Col lg={4} className="p-0">
+                <Col xs={6} lg={4} className="p-0">
                   <FeaturedCard
                     title="Red Chilli"
                     productImage={image}
