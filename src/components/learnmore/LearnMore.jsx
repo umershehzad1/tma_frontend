@@ -38,6 +38,7 @@ const LearnMore = () => {
 
   var settings = {
     dots: false,
+    arrows: false,
     swipeToSlide: true,
     speed: 500,
     slidesToShow: 3,

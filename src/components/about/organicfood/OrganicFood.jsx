@@ -65,8 +65,8 @@ const OrganicFood = () => {
                 <div>
                   <Image
                     src={leaf1}
-                    width={72}
-                    height={72}
+                    width={0}
+                    height={0}
                     sizes="100vw"
                     alt="team"
                   />
@@ -98,8 +98,8 @@ const OrganicFood = () => {
                 <div>
                   <Image
                     src={headphone}
-                    width={72}
-                    height={72}
+                    width={0}
+                    height={0}
                     sizes="100vw"
                     alt="team"
                   />
@@ -166,8 +166,8 @@ const OrganicFood = () => {
                 <div>
                   <Image
                     src={bag1}
-                    width={72}
-                    height={72}
+                    width={0}
+                    height={0}
                     sizes="100vw"
                     alt="team"
                   />
@@ -201,8 +201,8 @@ const OrganicFood = () => {
                 <div>
                   <Image
                     src={truck}
-                    width={72}
-                    height={72}
+                    width={0}
+                    height={0}
                     sizes="100vw"
                     alt="team"
                   />
@@ -234,8 +234,8 @@ const OrganicFood = () => {
                 <div>
                   <Image
                     src={box1}
-                    width={72}
-                    height={72}
+                    width={0}
+                    height={0}
                     sizes="100vw"
                     alt="team"
                   />

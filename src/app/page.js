@@ -15,6 +15,7 @@ import Testomonials from "@/components/testomonials/Testomonials";
 import FeaturedProduct from "@/components/featuredproduct/FeaturedProduct";
 import HomeMobileCategroy from "@/components/homemobilecard/HomeMobileCategroy";
 import NewlyAddedMobile from "@/components/newaddedmobile/NewlyAddedMobile";
+import FeaturedMobile from "@/components/featuredmobile/FeaturedMobile";
 const page = () => {
   return (
     <>
@@ -24,6 +25,7 @@ const page = () => {
       <CategoryHomeCard />
       
       <FeaturedProduct/>
+      <FeaturedMobile/>
    
       <NewlyAdded />
       <NewlyAddedMobile/>

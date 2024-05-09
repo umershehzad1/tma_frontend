@@ -3,6 +3,8 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import showmore from "@/assets/white-arrow.svg";
 import Image from "next/image";
 import firsttype from "@/assets/typefirst.png";
+import secondtype from "@/assets/secondtype.png";
+import thirdtype from "@/assets/thirdtype.png";
 import vegetable from "@/assets/vegetableside.png";
 import Link from "next/link";
 import "./Types.css"
@@ -11,7 +13,7 @@ const Types = () => {
     <>
       <Container>
         <Row className="py-4">
-          <Col xs={12} lg={3}>
+          <Col xs={12} lg={3} className="order-lg-0 order-1 " >
             <div className="types my-2">
               <h1>Different Types of Meat</h1>
               <p>
@@ -29,7 +31,7 @@ const Types = () => {
               
             </div>
           </Col>
-          <Col xs={4} lg={3}>
+          <Col xs={4} lg={3} className="order-lg-1 order-0" >
             <div className="my-2">
               <Image
                 src={firsttype}
@@ -39,20 +41,20 @@ const Types = () => {
               />
             </div>
           </Col>
-          <Col xs={4} lg={3}>
+          <Col xs={4} lg={3} className="order-xs-1" >
             <div className="my-2">
               <Image
-                src={firsttype}
+                src={secondtype}
                 width={0}
                 height={0}
                 style={{ objectFit: "cover", height: "100%", width: "100%" }}
               />
             </div>
           </Col>
-          <Col xs={4} lg={3}>
+          <Col xs={4} lg={3} className="order-xs-2" >
             <div className="my-2">
               <Image
-                src={firsttype}
+                src={thirdtype}
                 width={0}
                 height={0}
                 style={{ objectFit: "cover", height: "100%", width: "100%" }}

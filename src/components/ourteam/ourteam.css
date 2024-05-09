@@ -1,0 +1,16 @@
+.footer-social {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+  }
+  .footer-social:hover {
+    background-color:  rgb(11, 47, 75);
+    transition: ease-out 0.2s;
+  }
+  
+  .footer-social:hover svg path {
+    fill: rgba(255, 255, 255, 1) !important;
+  }

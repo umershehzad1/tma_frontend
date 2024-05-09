@@ -36,3 +36,40 @@
     color: rgba(255, 255, 255, 1);
     font-family: var(--font-roboto-mono);
   }
+
+  @media only screen and (max-width: 768px) {
+    .hero h1 {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 27px;
+    
+    }
+    .hero .tag-line {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0.18em;
+    
+    }
+    .hero .what-we-do {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 19px;
+      margin-bottom: 0 !important;
+    }
+   .hero .hero-about{
+      font-size: 8px;
+      font-weight: 500;
+    
+    }
+    .det-hero{
+      margin-top: 1rem !important;
+    }
+    .hero button {
+      font-size: 8px;
+      font-weight: 500;
+      line-height: 10px;
+      padding: 6px 12px !important;
+  }
+
+  }

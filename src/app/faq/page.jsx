@@ -9,7 +9,10 @@ import "./faq.css"
 const Faqs = ({show}) => {
   return (
     <>
+    <div className="d-none d-md-block"> 
     {!show?<Image className="pb-2" src={veg} style={{ width: "100%" }} />:null}
+    </div>
+   
       
       <Container>
         <Row>

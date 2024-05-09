@@ -1,24 +1,48 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Card, Col, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import Link from "next/link";
 import customer from "@/assets/customer.png";
 import customer2 from "@/assets/customer2.png";
 import customer3 from "@/assets/customer3.png";
 import customer4 from "@/assets/customer4.png";
-import "./team.css"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./ourteam.css"
 
-const Team = () => {
-  const teamMembers = [
-    { name: "Jenny Wison", position: "CEO & Founder", image: customer },
-    { name: "Jenny Wison", position: "CEO & Founder", image: customer2 },
-    { name: "Jenny Wison", position: "CEO & Founder", image: customer3 },
-    { name: "Jenny Wison", position: "CEO & Founder", image: customer4 },
-  ];
-
+const OurTeam = () => {
+    const teamMembers = [
+        { name: "Jenny Wison", position: "CEO & Founder", image: customer },
+        { name: "Jenny Wison", position: "CEO & Founder", image: customer2 },
+        { name: "Jenny Wison", position: "CEO & Founder", image: customer3 },
+        { name: "Jenny Wison", position: "CEO & Founder", image: customer4 },
+      ];
+      var settings = {
+        dots: false,
+        arrows: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+          
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              initialSlide: 1
+            }
+          },
+         
+        ]
+      };
   return (
-    <Row className="d-none d-md-block" >
+   <>
+   <Row className="d-block d-md-none" >
       <div className="text-center mt-5">
         <h1 style={{ color: "#1A1A1A", fontWeight: "600", fontSize: "48px" }}>
           Our Awesome Team
@@ -29,6 +53,7 @@ const Team = () => {
           a a mi.
         </p>
       </div>
+      <Slider {...settings}>
       {teamMembers.map((member, index) => (
         <Col key={index} xs={12} lg={3}>
           <Card className="my-3">
@@ -115,8 +140,14 @@ const Team = () => {
           </Card>
         </Col>
       ))}
+      </Slider>
     </Row>
-  );
-};
+   
+    
+   
 
-export default Team;
+   </>
+  )
+}
+
+export default OurTeam

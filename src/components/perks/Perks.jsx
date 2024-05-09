@@ -49,7 +49,7 @@ const Perks = () => {
                 </div>
                 <div className="ms-3 ">
                   <b className="lag-perk perk-title  ">{perk.title}</b>
-                  <p className="text-muted par-perk" style={{ fontSize: "12px" }}>
+                  <p className="text-muted par-perk" >
                     {perk.description}
                   </p>
                 </div>

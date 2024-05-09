@@ -65,10 +65,10 @@ const FeaturedCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
             <Col xs={3}>
               <Image
                 src={cart}
-                width={50}
-                height={50}
+                width={0}
+                height={0}
                 alt="Add to Cart"
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", width:'100%' }}
               />
             </Col>
           </Row>

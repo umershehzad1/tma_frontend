@@ -5,8 +5,8 @@ const IconMobile = ({icons}) => {
   return (
    <>
     <Container>
-    <div className="d-flex overflow-auto">
-          {icons.map((icon, index) => (
+    <div className="d-flex overflow-auto my-4 ">
+          {icons?.map((icon, index) => (
             
               <div
                 className="text-center icons my-2 mx-2"

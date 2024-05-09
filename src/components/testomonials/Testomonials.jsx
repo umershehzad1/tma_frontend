@@ -13,9 +13,10 @@ import "./Testomonials.css"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const page = () => {
+const Testomonials = () => {
   var settings = {
-    dots: true,
+    dots: false,
+    arrows: false,
     infinite: false,
     speed: 500,
     slidesToShow: 3,
@@ -210,6 +211,6 @@ const page = () => {
   )
 }
 
-export default page;
+export default Testomonials;
 
 

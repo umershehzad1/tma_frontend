@@ -1,105 +1,140 @@
 .product-detail h4 {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 43.2px;
-    text-align: left;
-    color: #1a1a1a;
-  }
-  .product-detail .stock {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-  
-    text-align: left;
-    color: #00283d;
-    background: #dce2e6 !important;
-  }
-  .product-detail .sale {
-    font-size: 14px !important;
-    font-weight: 500;
-    line-height: 21px;
-    text-align: left;
-    color: #ea4b48;
-    background-color: #fdeded !important ;
-  }
-  .product-detail .brand {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: left;
-    color: #1a1a1a;
-  }
-  .product-detail {
-    margin-top: 6rem;
-  }
-  .product-detail .detail-head h4 {
-    font-size: 28px !important;
-  }
-  .product-detail .detail-head .stock {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 21px;
-  }
-  .text-gray {
-    color: #808080;
-  }
-  .footer-social {
-    height: 40px;
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 60px;
-  } 
-   .footer-social:hover {
-    background-color: rgb(11, 47, 75);
-    transition: ease-out 0.2s;
-  }
-  
-  .footer-social:hover svg path {
-    fill: rgba(255, 255, 255, 1) !important;
-  }
-  .btn-inc {
-    background: transparent;
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 5px;
-    margin-left: 0.5rem;
-    padding: 4px 12px;
-  }
-  .btn-dec {
-    background: transparent;
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 5px;
-    margin-right: 0.5rem;
-    padding: 4px 12px;
-  } 
-   .inc-dec {
-    border: solid 1px #e6e6e6;
-    border-radius: 5px;
-    width: 124px;
-    height: 50px;
-  }
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43.2px;
+  text-align: left;
+  color: #1a1a1a;
+}
+
+.product-detail .stock {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+
+  text-align: left;
+  color: #00283d;
+  background: #dce2e6 !important;
+}
+
+.product-detail .sale {
+  font-size: 14px !important;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #ea4b48;
+  background-color: #fdeded !important;
+}
+
+.product-detail .brand {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #1a1a1a;
+}
+
+.product-detail {
+  margin-top: 4rem;
+}
+
+.product-detail .detail-head h4 {
+  font-size: 28px !important;
+}
+
+.product-detail .detail-head .stock {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.text-gray {
+  color: #808080;
+}
+
+.footer-social {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+}
+
+.footer-social:hover {
+  background-color: rgb(11, 47, 75);
+  transition: ease-out 0.2s;
+}
+
+.footer-social:hover svg path {
+  fill: rgba(255, 255, 255, 1) !important;
+}
+
+.btn-inc {
+  background: transparent;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  padding: 4px 12px;
+}
+
+.btn-dec {
+  background: transparent;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  padding: 4px 12px;
+}
+
+.inc-dec {
+  border: solid 1px #e6e6e6;
+  border-radius: 5px;
+  width: 124px;
+  height: 50px;
+}
+
+.add-to-cart-button {
+  border-radius: 5px;
+  padding: 12px 40px;
+  background-color: #00283d !important;
+}
+
+.heart-outer {
+  width: 50px;
+  height: 50px;
+  background-color: #e6eaed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+}
+
+.size {
+  background: transparent;
+  background-color: white;
+
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+
   .add-to-cart-button {
     border-radius: 5px;
-    padding: 12px 40px;
+    padding: 12px 20px;
     background-color: #00283d !important;
+    margin-left: 0.7rem;
   }
-  .heart-outer {
-    width: 50px;
-    height: 50px;
-    background-color: #e6eaed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 60px;
+
+  .carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 60% !important;
+
+    background-color: black !important;
+    opacity: 0.5;
   }
-  .size {
-    background: transparent;
-    background-color: white;
-  
-    border-radius: 5px;
-    border: 1px solid #e6e6e6;
-    padding: 5px;
-  } 
+
+}

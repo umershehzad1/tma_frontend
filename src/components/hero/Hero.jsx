@@ -15,7 +15,7 @@ const Hero = () => {
         <Col xs={12} lg={12} className="ms-auto">
           <Row className="justify-content-between">
           
-          <Col xs={12} lg={9} className='det-hero '>
+          <Col xs={6} lg={9} className='det-hero '>
           <Col xs={12} lg={9} className=' mx-auto'>
           <div>
               <h1>FREE SEATTLE DELIVERY AND RETURNS</h1>
@@ -24,12 +24,12 @@ const Hero = () => {
                 We delivery fresh African food all over the United States
               </p>
             </div>
-            <div className="d-flex flex-column flex-lg-row">
-                <Link  href="/meat" > <div className="ms-lg-4 ms-0 mt-2">
-                <Button className="px-5">See All Products</Button>
+            <div className="d-flex pb-4">
+                <Link  href="/meat" > <div className="ms-lg-4 ms-0 me-lg-0 me-2 mt-2">
+                <Button  >See All Products</Button>
               </div></Link>
               <Link  href="/about" > <div className="ms-lg-4 ms-0 mt-2">
-                <Button className="px-5">About Us</Button>
+                <Button >About Us</Button>
               </div></Link>
              
             </div>
@@ -37,7 +37,7 @@ const Hero = () => {
           </Col>
           
           </Col>
-          <Col xs={12} lg={3} className="p-0">
+          <Col xs={6} lg={3} className="p-0">
             <div>
             <Image
                   src={hero}

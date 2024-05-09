@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import Image from 'next/image';
-import { Card, Badge, Col, Row } from "react-bootstrap";
+import { Card, Badge, Col, Row, Container } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import "./orderhistory.css"
 
@@ -19,7 +19,8 @@ const orders = [
 const OrderHistory = () => {
   return (
     <>
-      <Card className='mt-5' >
+    <Container className='d-none d-md-block'>
+    <Card className='mt-5' >
         <Card.Body className='px-0'>
           <div className='orderhistory '>
             <div><h1 style={{ fontSize: "20px", fontWeight: "500", color: '#1A1A1A', paddingLeft: '1.5rem' }}>Order History</h1></div>
@@ -80,6 +81,8 @@ const OrderHistory = () => {
 
         </Card.Body>
       </Card>
+    </Container>
+      
     </>
   )
 }

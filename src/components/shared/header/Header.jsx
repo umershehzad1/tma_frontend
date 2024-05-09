@@ -14,10 +14,12 @@ import cart from "@/assets/Bag.svg";
 import CartOverlay from "../../cartoverlay/CartOverlay";
 import HeartOverlay from "../../heartoverlay/HeartOverlay";
 import "./header.css";
+import HeaderOverlay from "@/components/headeroverlay/HeaderOverlay";
 function Header() {
   const [active, setActive] = useState(false);
   const [showCart, setShowCart] = useState(false);
   const [showHeart, setShowHeart] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleCartButtonClick = () => {
     setShowCart(true);
@@ -31,8 +33,16 @@ function Header() {
     setShowHeart(true);
   };
 
+
   const handleCloseHeart = () => {
     setShowHeart(false);
+  };
+
+  const handleMenuButtonClick = () => {
+    setShowMenu(true);
+  };
+  const handleCloseMenu = () => {
+    setShowMenu(false);
   };
 
   const navItems = [
@@ -89,7 +99,7 @@ function Header() {
           <Navbar.Brand as={Link} href="/">
             <Image src={logo} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Toggle aria-controls="navbarScroll" onClick={handleMenuButtonClick} />
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
@@ -190,6 +200,8 @@ function Header() {
 
       <CartOverlay isOpen={showCart} onClose={handleCloseCart} />
       <HeartOverlay isOpen={showHeart} onClose={handleCloseHeart} />
+      <HeaderOverlay isOpen={showMenu} onClose={handleCloseMenu}/>
+
     </>
   );
 }

@@ -4,6 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import OrderDetail from '@/components/orderdetail/OrderDetail';
 import Navigation from "../page";
 import "./history.css"
+import OrderHistoryMobilePage from '@/app/orderhistorymobile/page';
 
 const History = () => {
   return (
@@ -16,6 +17,7 @@ const History = () => {
         
         <Col xs={12} lg={9}>
             <OrderDetail/>
+            <OrderHistoryMobilePage/>
         </Col>
     </Row>
    </Container>

@@ -10,14 +10,17 @@ import Card from "react-bootstrap/Card";
 import { BsGoogle } from "react-icons/bs";
 import Link from "next/link";
 import "./signin.css"
+import AllBanner from "@/components/allbanner/AllBanner";
 const page = () => {
   return (
-    <Container style={{ paddingBottom: "60px" }}>
+    <>
+    <AllBanner/>
+    <Container className="py-5" style={{ paddingBottom: "60px" }}>
       <Row>
         <Col lg={5} className="mx-auto">
           <Card
             style={{
-              width: "40rem",
+              
               boxShadow: "0px 0px 56px 0px #00260314",
               backgroundColor: "#FFFFFF",
             }}
@@ -60,8 +63,8 @@ const page = () => {
                     <FiEye />
                   </InputGroup.Text>
                 </InputGroup>
-                <Row>
-                  <Col lg={6}>
+                <Row className="my-3">
+                  <Col xs={6} lg={6}>
                     <div>
                       <Form.Check.Input
                         style={{ padding: "10px", border: "2px solid gray" }}
@@ -72,14 +75,17 @@ const page = () => {
                           paddingLeft: "5px",
                           paddingTop: "3px",
                           color: "#666666",
+                          fontSize:"10px", 
+                          fontWeight:"400"
                         }}
                       >
                         Remember me
                       </Form.Check.Label>
-                    </div>
+                      </div>
+                   
                   </Col>
-                  <Col lg={6}>
-                    <p style={{ textAlign: "end", color: "#666666" }}>
+                  <Col xs={6} lg={6} className="mt-2">
+                    <p style={{ textAlign: "end", color: "#666666", fontSize:"10px", fontWeight:"400" }}>
                       Forgot Password
                     </p>
                   </Col>
@@ -127,6 +133,7 @@ const page = () => {
         </Col>
       </Row>
     </Container>
+    </>
   );
 };
 

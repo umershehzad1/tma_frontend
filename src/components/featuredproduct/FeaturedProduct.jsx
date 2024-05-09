@@ -12,7 +12,7 @@ import FeaturedCard from "../shared/ featuredcard/FeaturedCard";
 const FeaturedProduct = () => {
   return (
     <>
-      <section
+      <section className="d-none d-md-block"
         style={{
           backgroundColor: "#F7F7F7",
           paddingTop: "2rem",
