@@ -12,6 +12,7 @@
     "@next/font": "^14.2.3",
     "@react-sandbox/heart": "^1.1.0",
     "bootstrap": "^5.3.3",
+    "firebase": "^10.11.1",
     "multi-range-slider-react": "^2.0.7",
     "next": "14.1.4",
     "prop-types": "^15.8.1",
