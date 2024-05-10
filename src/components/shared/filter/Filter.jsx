@@ -130,7 +130,7 @@ const Filter = () => {
             </Accordion.Body>
           </Accordion.Item>
           <hr />
-          <div className="favourite">
+          <div className="favourite py-2">
             <label className="my-1">
               <input
                 className="radio-input"
@@ -138,7 +138,40 @@ const Filter = () => {
                 name="category"
                 value="fresh"
               />
-              <b className="custom-text"> favourites</b>
+              <b className="custom-text px-1"> Favourite</b>
+            </label>
+          </div>
+          <div className="favourite py-2">
+            <label className="my-1">
+              <input
+                className="radio-input"
+                type="checkbox"
+                name="category"
+                value="fresh"
+              />
+              <b className="custom-text px-1"> Newly Added</b>
+            </label>
+          </div>
+          <div className="favourite py-2">
+            <label className="my-1">
+              <input
+                className="radio-input"
+                type="checkbox"
+                name="category"
+                value="fresh"
+              />
+              <b className="custom-text px-1"> Top Selling</b>
+            </label>
+          </div>
+          <div className="favourite py-2">
+            <label className="my-1">
+              <input
+                className="radio-input"
+                type="checkbox"
+                name="category"
+                value="fresh"
+              />
+              <b className="custom-text px-1"> Limited Stock</b>
             </label>
           </div>
         </Accordion>

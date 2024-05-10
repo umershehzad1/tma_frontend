@@ -1,11 +1,17 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { Card, Col, Row } from "react-bootstrap";
+import { Button, Card, Col, Row } from "react-bootstrap";
 import cart from "@/assets/cart.svg";
 import "./categoryCard.css";
+import Heart from "@react-sandbox/heart";
 const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even,hasBorder }) => {
+  const [showHeart, setShowHeart] = useState(false);
+  const handleHeartButtonClick = () => {
+    setShowHeart(true);
+  };
+
   return (
     <>
       <Card
@@ -15,7 +21,7 @@ const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even,hasBord
               ? "odd-card my-2 position-relative  category-product-card"
               : "my-2 position-relative  category-product-card"
           }`}
-          style={{ borderRadius: hasBorder ? "0" : "5px" }}
+          style={{ borderRadius: hasBorder ? "0" : "8px" }}
       >
         {sale ? (
           <div
@@ -35,6 +41,23 @@ const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even,hasBord
         ) : (
           ""
         )}
+        <div
+            className="position-absolute like-product"
+            style={{ top: "0px", right: "5px" }}
+          >
+           <div className="m-2 d-none d-md-block">
+                <Button class=" position-relative d-flex justify-content-center align-items-center" style={{background:"white",borderRadius:"60%",height:"50px",width:"50px",border:"1px solid #F2F2F2"}}>
+                  <Heart
+                    width={24}
+                    height={24}
+                    className="mx-2 "
+                    // class="bg-transparent border-0 "
+                    // active={active}
+                    onClick={handleHeartButtonClick}
+                  />
+                </Button>
+              </div>
+          </div>
         <Link href="/productdetail">
           <Image
             src={productImage}

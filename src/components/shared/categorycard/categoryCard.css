@@ -15,3 +15,22 @@
     border-left: 1px solid #d2d2d2 !important;
   }
 }
+.category-product-card .card-text{
+  color: grey ;
+
+}
+.category-product-card:hover .card-text{
+  color: #006BA3;
+
+}
+.category-product-card:hover{
+  border-color: #006BA3;
+  box-shadow: 0px 0px 12px 0px #20B52652;
+
+}
+.category-product-card .like-product{
+  display: none;
+  }
+.category-product-card:hover .like-product{
+display: block;
+}
