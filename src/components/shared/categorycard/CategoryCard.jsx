@@ -18,7 +18,7 @@ const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even,hasBord
         className={` ${Even === 1
             ? "even-card my-2 position-relative  category-product-card"
             : Even === 2
-              ? "odd-card my-2 position-relative  category-product-card"
+              ? "odd-card my-2 position-relative  category-product-card border-left-0 border-right-0"
               : "my-2 position-relative  category-product-card"
           }`}
           style={{ borderRadius: hasBorder ? "0" : "8px" }}
