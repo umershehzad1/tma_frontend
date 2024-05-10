@@ -38,12 +38,12 @@ const CategoryProductPage = ({ banner, title, products }) => {
         </h2>
 
         <Row>
-          <Col xs={12} lg={3}>
+          {/* <Col xs={12} lg={3}>
             <div className="d-none d-md-block ">
               <Filter />
             </div>
-          </Col>
-          <Col xs={12} lg={9}>
+          </Col> */}
+          <Col xs={12} lg={12}>
             <div className="d-flex justify-content-between">
               <div className="d-block d-md-none">
                 <Button
@@ -60,15 +60,15 @@ const CategoryProductPage = ({ banner, title, products }) => {
                   />
                 </Button>
               </div>
-              <div className="ms-auto pb-4 mt-3">
+              {/* <div className="ms-auto pb-4 mt-3">
                 <b>{products.length} </b>
                 <span>Results Found</span>
-              </div>
+              </div> */}
             </div>
 
             <Row>
               {products.map((product, index) => (
-                <Col xs={6} lg={4}>
+                <Col xs={6} lg={3}>
                   <CategoryCard
                     sale={product.sale}
                     title={product.title}
