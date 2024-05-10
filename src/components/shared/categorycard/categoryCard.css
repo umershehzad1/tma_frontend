@@ -1,6 +1,11 @@
 .odd-card {
   border-right: 0 !important;
   border-left: 0 !important;
+  min-height: 350px !important;
+}
+.even-card {
+  min-height: 350px !important;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .category-product-card .card-text {
