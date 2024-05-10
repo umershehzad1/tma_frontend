@@ -42,7 +42,7 @@ const Team = () => {
             />
             <Card.Body>
               <Row>
-                <Col xs={6}>
+                <Col xs={6} >
                   <Card.Title
                     style={{
                       color: "#1A1A1A",

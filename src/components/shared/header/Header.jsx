@@ -94,11 +94,40 @@ function Header() {
         </div>
       </Container>
       <hr className="mt-2 mb-2" style={{ color: "#999999" }} />
-      <Navbar expand="lg" className="bg-transparent header">
+      <Navbar expand="lg" expanded={false} collapaseOnSelect className="bg-transparent header">
         <Container className="pb-2">
           <Navbar.Brand as={Link} href="/">
             <Image src={logo} />
           </Navbar.Brand>
+          <div className="d-block d-lg-none d-flex ms-auto">
+          <div className="m-2" style={{ borderRight: "2px solid #cccccc" }}>
+                <Button class="bg-transparent border-0 position-relative">
+                  <Heart
+                    width={24}
+                    height={24}
+                    className="mx-2 "
+                    // class="bg-transparent border-0 "
+                    // active={active}
+                    onClick={handleHeartButtonClick}
+                  />
+                </Button>
+              </div>
+              <div className="mt-2">
+                <Button
+                  type="button"
+                  class="bg-transparent border-0 position-relative"
+                  onClick={handleCartButtonClick}
+                >
+                  <Image src={cart} />
+                  <span
+                    class="position-absolute top-30 start-5 translate-middle badge rounded-pill"
+                    style={{ background: "rgb(11, 47, 75)" }}
+                  >
+                    2
+                  </span>
+                </Button>
+              </div>
+          </div>
           <Navbar.Toggle aria-controls="navbarScroll" onClick={handleMenuButtonClick} />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -144,11 +173,13 @@ function Header() {
                 }
               })}
             </Nav>
-            <Form className="d-flex">
+            
+          </Navbar.Collapse>
+          <Form className="d-flex searchbar-outer">
               <Form.Control
                 type="search"
                 placeholder="Search"
-                className="me-2"
+                className="me-2 "
                 aria-label="Search"
               />
               <Button className="search-btn">
@@ -166,7 +197,9 @@ function Header() {
                   <path d="M15.857 15.86 21 21.001"></path>
                 </svg>
               </Button>
-              <div className="m-2" style={{ borderRight: "2px solid #cccccc" }}>
+
+             
+              <div className="m-2 d-none d-md-block" style={{ borderRight: "2px solid #cccccc" }}>
                 <Button class="bg-transparent border-0 position-relative">
                   <Heart
                     width={24}
@@ -178,7 +211,7 @@ function Header() {
                   />
                 </Button>
               </div>
-              <div className="mt-2">
+              <div className="mt-2 d-none d-md-block">
                 <Button
                   type="button"
                   class="bg-transparent border-0 position-relative"
@@ -193,8 +226,8 @@ function Header() {
                   </span>
                 </Button>
               </div>
+           
             </Form>
-          </Navbar.Collapse>
         </Container>
       </Navbar>
 

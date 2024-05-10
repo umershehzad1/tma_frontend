@@ -54,6 +54,7 @@ const RelatedProduct = () => {
                 productImage={product.productImage}
                 price={product.price}
                 Oldprice={product.Oldprice}
+                hasBorder={true}
               />
             </Col>
           ))}

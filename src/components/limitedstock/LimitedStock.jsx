@@ -64,6 +64,7 @@ const LimitedStock = () => {
               price={product.price}
               Oldprice={product.Oldprice}
               Even={index%2===0?1:2}
+              hasBorder={true}
             />
             </div>
           ))}

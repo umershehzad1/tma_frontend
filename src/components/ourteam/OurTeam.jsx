@@ -67,7 +67,7 @@ const OurTeam = () => {
             />
             <Card.Body>
               <Row>
-                <Col xs={6}>
+                <Col xs={12}>
                   <Card.Title
                     style={{
                       color: "#1A1A1A",
@@ -87,7 +87,7 @@ const OurTeam = () => {
                     {member.position}
                   </Card.Text>
                 </Col>
-                <Col xs={6}>
+                <Col xs={12}>
                   <div className="d-flex mt-3 justify-content-end">
                     <Link href={"#"} className="footer-social ">
                       <svg

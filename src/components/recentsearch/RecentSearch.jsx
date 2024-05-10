@@ -13,6 +13,7 @@ const RecentSearch = () => {
       productImage: image,
       price: 14.9,
       Oldprice: 16,
+      
     },
     {
       sale: "50",
@@ -20,6 +21,7 @@ const RecentSearch = () => {
       productImage: image,
       price: 14.9,
       Oldprice: 16,
+      
     },
     {
       sale: "50",
@@ -27,6 +29,7 @@ const RecentSearch = () => {
       productImage: image,
       price: 14.9,
       Oldprice: 16,
+      
     },
     {
       sale: "50",
@@ -34,6 +37,7 @@ const RecentSearch = () => {
       productImage: image,
       price: 14.9,
       Oldprice: 16,
+      
     },
     {
       sale: "50",
@@ -41,6 +45,7 @@ const RecentSearch = () => {
       productImage: image,
       price: 14.9,
       Oldprice: 16,
+      
     },
 
 
@@ -64,6 +69,7 @@ const RecentSearch = () => {
               price={product.price}
               Oldprice={product.Oldprice}
               Even={index%2===0?1:2}
+              hasBorder={true}
             />
             </div>
           ))}

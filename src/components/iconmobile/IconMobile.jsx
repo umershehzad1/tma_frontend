@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-
+import "./IconMobile.css"
 const IconMobile = ({icons}) => {
   return (
    <>
@@ -9,12 +9,13 @@ const IconMobile = ({icons}) => {
           {icons?.map((icon, index) => (
             
               <div
-                className="text-center icons my-2 mx-2"
+                className="text-center icons my-2 mx-2 "
                 style={{
                   borderRight:
                     index !== icons.length - 1
                       ? "1px solid rgba(230, 230, 230, 1)"
                       : "none",
+                     
                 }}
               >
                 {icon.logo}

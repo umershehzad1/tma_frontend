@@ -5,17 +5,17 @@ import Link from "next/link";
 import { Card, Col, Row } from "react-bootstrap";
 import cart from "@/assets/cart.svg";
 import "./categoryCard.css";
-const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even }) => {
+const CategoryCard = ({ sale, title, productImage, price, Oldprice, Even,hasBorder }) => {
   return (
     <>
       <Card
-        className={` ${
-          Even === 1
-            ? "even-card my-2 position-relative rounded-0 category-product-card"
+        className={` ${Even === 1
+            ? "even-card my-2 position-relative  category-product-card"
             : Even === 2
-            ? "odd-card my-2 position-relative rounded-0 category-product-card"
-            : "my-2 position-relative rounded-0 category-product-card"
-        }`}
+              ? "odd-card my-2 position-relative  category-product-card"
+              : "my-2 position-relative  category-product-card"
+          }`}
+          style={{ borderRadius: hasBorder ? "0" : "5px" }}
       >
         {sale ? (
           <div

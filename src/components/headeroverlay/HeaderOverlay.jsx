@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { Nav, NavDropdown, Offcanvas } from "react-bootstrap";
-
+import "./headeroverlay.css"
 const HeaderOverlay = ({ isOpen, onClose }) => {
 
     const handleClose = () => {
@@ -27,20 +27,20 @@ const HeaderOverlay = ({ isOpen, onClose }) => {
     ];
 
     return (
-        <Offcanvas placement="end" show={isOpen} onHide={handleClose}>
+        <Offcanvas placement="end" show={isOpen} onHide={handleClose} style={{ width: "300px" }}>
             <Offcanvas.Header closeButton />
-            <Offcanvas.Body>
-             
-                    {items.map((item, index) => (
-                      <div className="my-3 mx-2">
-                        <Link href={item.href} key={index} className="mt-2 text-decoration-none mx-3" style={{color: "#4D4D4D"}}>
+            <Offcanvas.Body className="px-0 py-3">
+
+                {items.map((item, index) => (
+                    <div className="">
+                        <Link href={item.href} key={index} className="mt-2 text-decoration-none px-3" style={{ color: "#4D4D4D" }}>
                             {item.title}
                         </Link>
-                        <hr/>
-                      </div>  
-                     
-                    ))}
-              
+                        <hr />
+                    </div>
+
+                ))}
+
             </Offcanvas.Body>
         </Offcanvas>
     );

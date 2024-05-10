@@ -25,7 +25,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="d-flex pb-4">
-                <Link  href="/meat" > <div className="ms-lg-4 ms-0 me-lg-0 me-2 mt-2">
+                <Link  href="/meat" > <div className="ms-lg-0 ms-0 me-lg-0 me-2 mt-2">
                 <Button  >See All Products</Button>
               </div></Link>
               <Link  href="/about" > <div className="ms-lg-4 ms-0 mt-2">

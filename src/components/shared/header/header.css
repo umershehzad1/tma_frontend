@@ -13,3 +13,11 @@
     border-bottom-left-radius: 0px !important;
     margin-left: -20px;
   }
+
+
+  @media only screen and (max-width: 768px) {
+
+    .searchbar-outer{
+      width: 100%;
+    }
+  }

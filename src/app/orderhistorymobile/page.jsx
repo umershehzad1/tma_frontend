@@ -44,7 +44,8 @@ const OrderHistoryMobilePage = () => {
               <p>{order.date}</p>
             </div>
             <div className='order-mobile'>
-              <p className='ms-5 order-view'>View</p>
+              {/* <p className='ms-5 order-view'>View</p> */}
+              <p className='ms-5 order-view'><a className='detail' href="/detail">View</a></p>
               <Button className='add-to-cart-button'>Reorder</Button>
             </div>
           </Card.Body>

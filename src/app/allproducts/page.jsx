@@ -51,7 +51,7 @@ const page = () => {
       ];
   return (
    <>
-   <CategoryProductPage banner={allproduct} title={"Canned Foods"} products={products}   />
+   <CategoryProductPage banner={allproduct} title={"All Products"} products={products}   />
    </>
   )
 }
