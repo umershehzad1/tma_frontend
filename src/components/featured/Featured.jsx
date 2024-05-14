@@ -7,7 +7,7 @@ import Link from "next/link";
 import image from "../../assets/image.png";
 import View from "../../assets/View1.svg";
 import Wishlist from "../../assets/Wishlist1.svg";
-
+import "./Featured.css"
 const Featured = () => {
   const products = [
     {

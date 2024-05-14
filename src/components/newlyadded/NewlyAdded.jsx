@@ -10,7 +10,7 @@ import Sale from "@/assets/sale.png";
 import showmore from "@/assets/showmore.svg";
 import Image from "next/image";
 import Link from "next/link";
-import "./NewlyAdded.css"
+import "./NewlyAdded.css";
 import NewlyAddedMobile from "../newaddedmobile/NewlyAddedMobile";
 const imageMap = {
   Vegetables: { image: vegetable, link: "/vegetable" },
@@ -22,8 +22,7 @@ const imageMap = {
 const NewlyAdded = () => {
   return (
     <>
-
-      <Container className="d-none d-md-block" >
+      <Container className="d-none d-md-block">
         <ViewAllHeading
           title="Newly Added Products"
           viewAllLink="/categories"
@@ -44,20 +43,20 @@ const NewlyAdded = () => {
                 <h1 className="text-white" style={{ fontSize: "32px" }}>
                   Fruit
                 </h1>
-                <Link href="/meat">
-                <Button className="newly-btn">
-                  Shop Now
-                  <span className="ms-2">
-                    <Image
-                      src={showmore}
-                      width={13}
-                      height={13}
-                      alt="shipping"
-                    />
-                  </span>
-                </Button>
-                </Link>
-               
+             
+                  <Button as={Link}
+                        href={"/meat"} className="newly-btn text-decoration-none">
+                    Shop Now
+                    <span className="ms-2">
+                      <Image
+                        src={showmore}
+                        width={13}
+                        height={13}
+                        alt="shipping"
+                      />
+                    </span>
+                  </Button>
+            
               </div>
             </div>
           </Col>
@@ -80,7 +79,11 @@ const NewlyAdded = () => {
                       <h1 className="text-white" style={{ fontSize: "32px" }}>
                         {category}
                       </h1>
-                      <Button className="newly-btn" as={Link} href={imageMap[category].link}>
+                      <Button
+                        className="newly-btn text-decoration-none"
+                        as={Link}
+                        href={imageMap[category].link}
+                      >
                         Shop Now
                         <span className="ms-2">
                           <Image
@@ -99,7 +102,6 @@ const NewlyAdded = () => {
           </Col>
         </Row>
       </Container>
-     
     </>
   );
 };
