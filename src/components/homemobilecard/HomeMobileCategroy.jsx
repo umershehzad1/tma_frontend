@@ -22,7 +22,7 @@ const HomeMobileCategroy = ({categories}) => {
   <div className="d-flex overflow-auto">
   {categories?.map((category, index) => (
            
-           <Card key={index} className="pt-2 my-2 text-decoration-none " style={{minWidth:"40%"}} as={Link}  href={category?.link}>
+           <Card key={index} className="pt-2 m-2 text-decoration-none " style={{minWidth:"40%"}} as={Link}  href={category?.link}>
        <div
          style={{
            width: "80%",

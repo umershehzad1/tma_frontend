@@ -60,10 +60,10 @@ const CategoryProductPage = ({ banner, title, products }) => {
                   />
                 </Button>
               </div>
-              {/* <div className="ms-auto pb-4 mt-3">
+              <div className="ms-auto pb-4 mt-3">
                 <b>{products.length} </b>
                 <span>Results Found</span>
-              </div> */}
+              </div>
             </div>
 
             <Row>
