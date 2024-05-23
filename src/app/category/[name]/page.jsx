@@ -6,8 +6,8 @@ import Image from "next/image";
 import FilterOverlay from "@/components/filteroverlay/FilterOverlay";
 import CategoryCard from "@/components/shared/categorycard/CategoryCard";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import banner from "@/assets/meat1.png";
 import smfilter from "@/assets/smfilter.png";
+import Loader from "@/components/loader/Loader";
 const Page = () => {
   const params = useParams();
   const paramsname = params.name?.replace(/\s+/g, "-");
@@ -31,7 +31,6 @@ const Page = () => {
         const response = await GetCategoryByName(paramsname);
         setData(response.data.data.products);
         setCategory(response.data.data.category);
-        console.log("data", response.data.data);
       } catch (error) {
         setError(error.message);
       } finally {
@@ -91,17 +90,24 @@ const Page = () => {
               </div>
 
               <Row>
-                {data.map((product, index) => (
-                  <Col xs={6} lg={3}>
-                    <CategoryCard
-                      sale={product.sale}
-                      title={product.title}
-                      productImage={product.productImage}
-                      price={product.price}
-                      Oldprice={product.Oldprice}
-                    />
-                  </Col>
-                ))}
+                {loading ? (
+                  <Loader />
+                ) : (
+                  <>
+                    {data.map((product, index) => (
+                      <Col xs={6} lg={3}>
+                        <CategoryCard
+                          sale={product.sale}
+                          title={product.name}
+                          productImage={product?.images[0]}
+                          price={product.price}
+                          Oldprice={product.discount}
+                          id={product._id}
+                        />
+                      </Col>
+                    ))}
+                  </>
+                )}
               </Row>
             </Col>
           </Row>

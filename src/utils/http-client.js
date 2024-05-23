@@ -2,8 +2,7 @@ import axios from 'axios';
 
 import { Config } from '../../config';
 import { AuthHeader } from './auth.utils';
-// const baseURL = Config.API_BASE_URL;
-const baseURL="http://localhost:8000/api/v1/"
+const baseURL = Config.API_BASE_URL;
 
 
 

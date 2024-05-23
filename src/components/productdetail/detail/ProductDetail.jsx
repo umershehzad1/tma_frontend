@@ -18,7 +18,7 @@ import img3 from "@/assets/img3.png";
 import "./productdetail.css"
 
 
-const ProductDetail = () => {
+const ProductDetail = ({details}) => {
   const [active, setActive] = useState(false);
   const [count, setCount] = useState(0);
   const [showCart, setShowCart] = useState(false);
@@ -119,7 +119,7 @@ const ProductDetail = () => {
 
         <div className="detail-head">
           <h4>
-            Chinese Cabbage <Badge className="stock">In Stock</Badge>
+            {details.name} <Badge className="stock">In Stock</Badge>
           </h4>
         </div>
         <div className="mb-4">
@@ -127,15 +127,15 @@ const ProductDetail = () => {
             className="text-gray text-decoration-line-through"
             style={{ fontSize: "20px", fontWeight: "400" }}
           >
-            N48.00
+            N{details.price}
           </span>
           <span className="" style={{ fontSize: "24px", fontWeight: "500" }}>
             {" "}
-            N17.28
+            N{details.discount}
           </span>
 
           <Badge className="sale mx-2" pill>
-            64% Off
+            {details.discount}% Off
           </Badge>
         </div>
         <div style={{ marginTop: '1rem', marginBottom: '1rem' }}>
@@ -402,10 +402,7 @@ const ProductDetail = () => {
                   fontSize: "14px",
                 }}
               >
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel
-                consequat nec, ultrices et ipsum. Nulla varius magna a consequat
-                pulvinar.
+                {details.description}
               </span>
             </p>
           </Col>
@@ -467,10 +464,7 @@ const ProductDetail = () => {
                   fontSize: "14px",
                 }}
               >
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel
-                consequat nec, ultrices et ipsum. Nulla varius magna a consequat
-                pulvinar.
+               {details.description}
               </span>
             </p>
           </Col>
