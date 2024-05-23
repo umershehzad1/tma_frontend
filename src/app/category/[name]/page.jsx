@@ -7,14 +7,14 @@ import FilterOverlay from "@/components/filteroverlay/FilterOverlay";
 import CategoryCard from "@/components/shared/categorycard/CategoryCard";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import banner from "@/assets/meat1.png";
-import Filter from "@/components/shared/filter/Filter";
 import smfilter from "@/assets/smfilter.png";
 const Page = () => {
   const params = useParams();
-  const paramsname = params.name;
+  const paramsname = params.name?.replace(/\s+/g, "-");
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [category, setCategory] = useState([]);
 
   const [showFilter, setShowFilter] = useState(false);
   const handleFilterButtonClick = () => {
@@ -29,8 +29,8 @@ const Page = () => {
     const fetchData = async () => {
       try {
         const response = await GetCategoryByName(paramsname);
-        setData(response.data.data);
-
+        setData(response.data.data.products);
+        setCategory(response.data.data.category);
         console.log("data", response.data.data);
       } catch (error) {
         setError(error.message);
@@ -44,17 +44,15 @@ const Page = () => {
     }
   }, [paramsname]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div class="loader"></div>;
   if (error) return <div>Error: {error}</div>;
 
   return (
     <>
       <>
-        <Image
-          className="pb-4"
-          src={banner}
-          style={{ width: "100%", height: "auto" }}
-        />
+        <div style={{ width: "100%", height: "300px", position: "relative" }}>
+          <Image alt={category.name} src={category.image} sizes="100vw" fill />
+        </div>
         <Container>
           <h2
             className="my-3"
@@ -65,15 +63,10 @@ const Page = () => {
               color: "#006BA3",
             }}
           >
-            {paramsname}
+            {category?.name}
           </h2>
 
           <Row>
-            {/* <Col xs={12} lg={3}>
-            <div className="d-none d-md-block ">
-              <Filter />
-            </div>
-          </Col> */}
             <Col xs={12} lg={12}>
               <div className="d-flex justify-content-between">
                 <div className="d-block d-md-none">

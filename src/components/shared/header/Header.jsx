@@ -159,15 +159,19 @@ function Header() {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              {categories.slice(0, maxMainNavItems).map((item, index) => (
-                <Link
-                  href={`/category/${item.name}`}
-                  key={index}
-                  className="mt-2 text-decoration-none mx-3"
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {categories.slice(0, maxMainNavItems).map((item, index) => {
+  const urlName = item.name.replace(/ /g, '-');
+  return (
+    <Link
+      href={`/category/${urlName}`}
+      key={index}
+      className="mt-2 text-decoration-none mx-3"
+    >
+      {item.name}
+    </Link>
+  );
+})}
+
               {categories.length > maxMainNavItems && (
                 <NavDropdown title="Other" id="nav-dropdown-more">
                   {categories.slice(maxMainNavItems).map((item, index) => (
