@@ -19,14 +19,14 @@ import FeaturedMobile from "@/components/featuredmobile/FeaturedMobile";
 const page = () => {
   return (
     <>
-     
+
       <Hero />
       <Perks />
       <CategoryHomeCard />
       
       <FeaturedProduct/>
       <FeaturedMobile/>
-   
+  
       <NewlyAdded />
       <NewlyAddedMobile/>
 
@@ -36,11 +36,11 @@ const page = () => {
       <TopSelling />
       <Banner/>
       <LimitedStock />
-     
+  
       <Types />
       <Testomonials/>
 
-     
+  
       <Icons />
       <Instagram />
       

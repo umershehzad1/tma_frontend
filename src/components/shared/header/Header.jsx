@@ -1,14 +1,16 @@
 "use client";
-import Image from "next/image";
+
+
 import React, { useEffect, useState } from "react";
+import { useRouter } from 'next/navigation';
+import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "@/assets/logo.png";
-import Link from "next/link";
+import Link from "next/link"; 
 import Heart from "@react-sandbox/heart";
 import cart from "@/assets/Bag.svg";
 import CartOverlay from "../../cartoverlay/CartOverlay";
@@ -16,31 +18,48 @@ import HeartOverlay from "../../heartoverlay/HeartOverlay";
 import "./header.css";
 import HeaderOverlay from "@/components/headeroverlay/HeaderOverlay";
 import { GetAllCategories } from "@/services/categories/categories-service";
+import cookies from 'js-cookie';
+import Form from "react-bootstrap/Form";
+import { useSelector, useDispatch } from "react-redux"; // Add useDispatch
+import { logoutUser } from "@/app/redux/actions/userAction";
+import toast, { Toaster } from "react-hot-toast";
 
 function Header() {
-  const [active, setActive] = useState(false);
   const [showCart, setShowCart] = useState(false);
   const [showHeart, setShowHeart] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const router = useRouter();
+  const dispatch = useDispatch(); // Retrieve useDispatch hook
+  const userLogin = useSelector((state) => state.getUserData.session);
 
   useEffect(() => {
-    const fetchCategories = async () => {
-      setLoading(true);
-      try {
-        const response = await GetAllCategories();
-        setCategories(response?.data?.data);
-      } catch (error) {
-        console.error("Failed to fetch categories:", error);
-      } finally {
-        setLoading(false);
+    if (userLogin) {
+      const token = cookies.get('token');
+      if(token){
+        setIsLoggedIn(true);
       }
-    };
+    } 
+  }, [userLogin]);
 
+  useEffect(() => {
     fetchCategories();
   }, []);
+
+  const fetchCategories = async () => {
+    setLoading(true);
+    try {
+      const response = await GetAllCategories();
+      setCategories(response?.data?.data || []);
+    } catch (error) {
+      console.error("Failed to fetch categories:", error);
+      setCategories([]);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleCartButtonClick = () => {
     setShowCart(true);
@@ -66,20 +85,13 @@ function Header() {
     setShowMenu(false);
   };
 
-  const navItems = [
-    { title: "All Products", href: "/allproducts" },
-    { title: "Meat", href: "/meat" },
-    { title: "Vegetables", href: "/vegetable" },
-    { title: "Fish & Seafoods", href: "/fishandseafood" },
-    { title: "Grains & Flowers", href: "/grainandflower" },
-    { title: "Breakfast", href: "/breakfast" },
-    { title: "Seasoning & Oil", href: "/seasoningandoil" },
-    { title: "Drinks", href: "/drink" },
-    { title: "Snacks & Sweets", href: "/snackandsweet" },
-    { title: "Pasta & Noodles", href: "/pastaandnoodle" },
-    { title: "Canned Foods", href: "/cannedfood" },
-    { title: "Cosmetics", href: "/cosmetic" },
-  ];
+  const handleLogout = () => {
+    dispatch(logoutUser(false));
+    toast.success("Logout Successfully...!");
+     setTimeout(()=>{
+      router.push("/signin");
+     }, 2000)
+  };
 
   const maxMainNavItems = 6;
 
@@ -88,26 +100,35 @@ function Header() {
       <Container>
         <div className="text-end">
           <div className="pt-1">
-            <Link
-              className="text-decoration-none"
-              href="/signin"
-              style={{ fontSize: "14px", color: "#666666" }}
-            >
-              Sign In
-            </Link>
-            <span
-              className=" mx-2"
-              style={{ fontSize: "14px", color: "#666666" }}
-            >
-              /
-            </span>
-            <Link
-              className="text-decoration-none"
-              href="/signup"
-              style={{ fontSize: "14px", color: "#666666" }}
-            >
-              Sign Up
-            </Link>
+            {userLogin ? (
+              <Button
+                variant="link"
+                className="text-decoration-none"
+                onClick={handleLogout}
+              >
+                Logout
+              </Button>
+            ) : (
+              <>
+                <Link
+                  className="text-decoration-none"
+                  href="/signin"
+                >
+                  Sign In
+                </Link>
+                <span
+                  className="mx-2"
+                >
+                  /
+                </span>
+                <Link
+                  className="text-decoration-none"
+                  href="/signup"
+                >
+                  Sign Up
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </Container>
@@ -115,12 +136,12 @@ function Header() {
       <Navbar
         expand="lg"
         expanded={false}
-        collapaseOnSelect
+        collapseOnSelect
         className="bg-transparent header"
       >
         <Container className="pb-2">
           <Navbar.Brand as={Link} href="/">
-            <Image src={logo} />
+            <Image src={logo} alt="Logo" />
           </Navbar.Brand>
           <div className="d-block d-lg-none d-flex ms-auto">
             <div className="m-2" style={{ borderRight: "2px solid #cccccc" }}>
@@ -139,7 +160,7 @@ function Header() {
                 className="bg-transparent border-0 position-relative"
                 onClick={handleCartButtonClick}
               >
-                <Image src={cart} />
+                <Image src={cart} alt="Cart" />
                 <span
                   className="position-absolute top-30 start-5 translate-middle badge rounded-pill"
                   style={{ background: "rgb(11, 47, 75)" }}
@@ -160,17 +181,17 @@ function Header() {
               navbarScroll
             >
               {categories.slice(0, maxMainNavItems).map((item, index) => {
-  const urlName = item.name.replace(/ /g, '-');
-  return (
-    <Link
-      href={`/category/${urlName}`}
-      key={index}
-      className="mt-2 text-decoration-none mx-3"
-    >
-      {item.name}
-    </Link>
-  );
-})}
+                const urlName = item.name.replace(/ /g, '-');
+                return (
+                  <Link
+                    href={`/category/${urlName}`}
+                    key={index}
+                    className="mt-2 text-decoration-none mx-3"
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
 
               {categories.length > maxMainNavItems && (
                 <NavDropdown title="Other" id="nav-dropdown-more">
@@ -234,7 +255,7 @@ function Header() {
                 className="bg-transparent border-0 position-relative"
                 onClick={handleCartButtonClick}
               >
-                <Image src={cart} />
+                <Image src={cart} alt="Cart" />
                 <span
                   className="position-absolute top-30 start-5 translate-middle badge rounded-pill"
                   style={{ background: "rgb(11, 47, 75)" }}
@@ -250,6 +271,7 @@ function Header() {
       <CartOverlay isOpen={showCart} onClose={handleCloseCart} />
       <HeartOverlay isOpen={showHeart} onClose={handleCloseHeart} />
       <HeaderOverlay isOpen={showMenu} onClose={handleCloseMenu} />
+      <Toaster position="top-center" reverseOrder={false} />
     </>
   );
 }

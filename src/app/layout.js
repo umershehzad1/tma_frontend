@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "@/components/shared/header/Header";
 import TmaFooter from "@/components/shared/footer/TmaFooter";
+import StoreProvider from "./storeProvider";
 
 
 export const rock = Poppins({
@@ -20,9 +21,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={rock.className}>
+        <StoreProvider>
         <Header />
         {children}
         <TmaFooter />
+        </StoreProvider>
       </body>
     </html>
   );

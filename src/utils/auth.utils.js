@@ -7,22 +7,22 @@ const parseJwt = (token) => {
   };
   
   export function AuthHeader() {
-    const loggedInUser = JSON.parse(localStorage.getItem("user"));
+    const loggedInUser = JSON.parse(localStorage.getItem("token"));
     return loggedInUser && loggedInUser.token
       ? { "x-access-token": loggedInUser.token }
       : {};
   }
   
   export const AuthVerify = () => {
-    const loggedInUser = JSON.parse(localStorage.getItem("user"));
-    if (loggedInUser && loggedInUser.token) {
-      const decodedJwt = parseJwt(loggedInUser.token);
+    const loggedInUser = window.localStorage.getItem("token");
+    if (loggedInUser) {
+      const decodedJwt = parseJwt(loggedInUser);
       return decodedJwt.exp * 1000 < Date.now() ? false : true;
     } else return false;
   };
   
   export const AuthMembership = () => {
-    const loggedInUser = JSON.parse(localStorage.getItem("user"));
+    const loggedInUser = JSON.parse(localStorage.getItem("token"));
     if (loggedInUser?.membership=="active") {
       return true;
     } else return false;
