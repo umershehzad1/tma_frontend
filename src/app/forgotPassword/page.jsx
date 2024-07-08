@@ -27,12 +27,41 @@ const Page = () => {
     validationSchema: validationSchema,
     onSubmit: async (values) => {
       try {
+        // if(values){
+        //     let sendMailPromise = sendMail(values);
+        //     toast.promise(sendMailPromise, {
+        //         loading: "Sending Mail...!",
+        //         success: (response) => <b>🦄 {response.data.message}</b>,
+        //         error: (error)=> <b>{error.error}</b>,
+        //       });
+        //       sendMailPromise.then(()=>{
+        //         setTimeout(()=>{
+        //            router.push(`/verifyOTP?email=${values.email}`);
+        //             formik.resetForm();
+        //         }, 2000)
+        //       }).catch((error)=>{
+        //         console.log(error);
+        //       })
+        //     }
 
         const email = values.email;
         sendPasswordResetEmail(auth, email).then((data)=>{
           console.log("Email Sent! : ", data);
           toast.success(`🦄 Email Sent to ${email}`);
-    
+            //     let sendMailPromise = resetPassword(values);
+            // toast.promise(sendMailPromise, {
+            //     loading: "Sending Mail...!",
+            //     success: (response) => <b>🦄 {response.data.message}</b>,
+            //     error: (error)=> <b>{error.error}</b>,
+            //   });
+            //   sendMailPromise.then(()=>{
+            //     setTimeout(()=>{
+            //        router.push(`/verifyOTP?email=${values.email}`);
+            //         formik.resetForm();
+            //     }, 2000)
+            //   }).catch((error)=>{
+            //     console.log(error);
+            //   })
         }).catch((err)=>{
           toast.error(err.code);
         })

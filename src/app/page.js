@@ -16,17 +16,19 @@ import FeaturedProduct from "@/components/featuredproduct/FeaturedProduct";
 import HomeMobileCategroy from "@/components/homemobilecard/HomeMobileCategroy";
 import NewlyAddedMobile from "@/components/newaddedmobile/NewlyAddedMobile";
 import FeaturedMobile from "@/components/featuredmobile/FeaturedMobile";
+
 const page = () => {
+
   return (
     <>
-
+     
       <Hero />
       <Perks />
       <CategoryHomeCard />
       
       <FeaturedProduct/>
       <FeaturedMobile/>
-  
+   
       <NewlyAdded />
       <NewlyAddedMobile/>
 
@@ -36,11 +38,11 @@ const page = () => {
       <TopSelling />
       <Banner/>
       <LimitedStock />
-  
+     
       <Types />
       <Testomonials/>
 
-  
+     
       <Icons />
       <Instagram />
       
