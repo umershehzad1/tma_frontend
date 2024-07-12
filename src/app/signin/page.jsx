@@ -58,7 +58,7 @@ const Page = () => {
           loginPromise
             .then( (response) => {
               // localStorage.setItem("token", response.data);
-              const token = response.data;
+              const token = response.token;
               cookies.set('token', token, { expires: 1 })
               setTimeout(() => {
                 router.push("/");
